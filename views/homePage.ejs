@@ -32,6 +32,7 @@
     </div>
 </div>
 
+<!--Head-->
 <div id="first" class="ui grid sixteen wide column center aligned">
     <div class="headPage">
         <h5>Zdravo, ja sam</h5>
@@ -39,9 +40,13 @@
         <h5 style="color: white">Web developer</h5>
         <div class="ui center aligned grid">
             <div class="sixteen wide column icons">
-                <i class="ui large circular facebook f icon"></i>
-                <i class="ui large circular instagram icon"></i>
-                <i class="ui large circular mail outline icon"></i>
+                <a href="https://www.facebook.com/leMaleta88" target="_blank">
+                    <i class="ui large circular facebook f icon"></i>
+                </a>
+                <a href="https://www.instagram.com/le_maleta" target="_blank">
+                    <i class="ui large circular instagram icon"></i>
+                </a>
+                    <i class="ui large circular mail outline icon"></i>
             </div>
 
 
@@ -60,11 +65,11 @@
     </div>
     <div style="top:96%;position: relative;" id="21"></div>
 </div>
-
+<!--About Myself-->
 <div style="margin: 0 0 0 0;" id="second" class="ui grid sixteen wide column">
     <div class="ui grid twelve wide column centered aligned middle aligned">
 
-        <h1 style="text-align: center;padding-bottom: 4rem; font-family: 'Lobster', cursive;letter-spacing: 2px;">Nekoliko reči o sebi.</h1>
+        <h1 class="TabHead">Nekoliko reči o sebi</h1>
 
         <div class="four wide column">
             <img class="ui medium circular image" src="images/profile.jpg" alt="Profile picture"/>
@@ -86,7 +91,7 @@
         </div>
     </div>
 </div>
-
+<!--Skills-->
 <div id="third" class="ui grid sixteen wide column">
     <div class="ui grid twelve wide column centered aligned">
         <div class="seven wide column">
@@ -187,28 +192,28 @@
         </div>
 
         <div class="sixteen wide column centered aligned">
-            <button style="padding: 1rem 3rem 1rem 3rem" class="ui black basic icon button ">
+            <a href="https://drive.google.com/file/d/0B70TpMNWhWKoVUktU1lIM05mWGs/view?usp=sharing" target="_blank"
+               style="padding: 1rem 3rem 1rem 3rem" class="ui black basic icon button ">
                 <i class="download icon"></i>
                 Preuzmite CV
-            </button>
+            </a>
             <!--todo dugme hover menja boju-->
         </div>
     </div>
 
 </div>
-
+<!--Contact Button-->
 <div class="ui grid middle aligned centered aligned imageDiv">
     <div class="sixteen wide column center aligned">
         <h1 style="color: white">
-            Želite da me kontaktirate? Spreman sam 24/7
+            Želite da me kontaktirate?
         </h1>
         <button class="ui inverted button">
-            Zaposli me
+            Pošaljite poruku
         </button>
     </div>
 </div>
-
-
+<!--TimeLine-->
 <div id="fourth">
 
     <div class="ui grid sixteen wide column center aligned timelineHeader">
@@ -266,6 +271,56 @@
     </ul>
 </div>
 
+<div class="five ui grid twelve wide column centered aligned">
+    <div class="sixteen wide column" style="padding-top: 3rem">
+    <h1 class="TabHead">Nekoliko lepih reči</h1>
 
+        <div class="owl-carousel owl-theme">
+            <div> Your Content </div>
+            <div> Your Content </div>
+            <div> Your Content </div>
+            <div> Your Content </div>
+            <div> Your Content </div>
+            <div> Your Content </div>
+            <div> Your Content </div>
+        </div>
+    </div>
+</div>
+<div class="six ui grid">
+
+    <div class="nine wide column">
+    <form class="ui form">
+        <div class="two fields">
+        <div class="field">
+            <label>Ime</label>
+            <input type="text" name="first-name" placeholder="Ime">
+        </div>
+        <div class="field">
+            <label>Email</label>
+            <input type="text" name="last-name" placeholder="Email">
+        </div>
+        </div>
+
+        <div class="field">
+            <label>Naslov</label>
+            <input type="text" name="last-name" placeholder="Naslov / predmet">
+        </div>
+        <div class="field">
+            <label>Poruka</label>
+            <textarea name="last-name" placeholder="Poruka"></textarea>
+        </div>
+        <button class="ui button" type="submit">Pošalji</button>
+    </form>
+    </div>
+</div>
+
+<script src="../node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
+<!--todo namestiti carousel-->
+
+<script>
+    $(document).ready(function(){
+        $('.owl-carousel').owlCarousel();
+    });
+</script>
 </body>
 </html>

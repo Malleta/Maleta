@@ -76,4 +76,6 @@ app.controller('myCtrl',['$scope', '$http', function ($scope, $http) {
         $('.authorWindowWrapper').stop().fadeOut('fast').find('p').removeClass('trans');
     });
 
+
+
 }]);
