@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+<% include partials/head.ejs %>
+<body ng-controller="myCtrl">
+
+<div ng-hide="false" class="ui fixed inverted menu">
+    <div class="ui container">
+        <a href="#" class="header item">
+            <img class="logo">
+            NM
+        </a>
+        <a href="#" class="item">Home</a>
+        <div class="ui simple dropdown item">
+            Dropdown <i class="dropdown icon"></i>
+            <div class="menu">
+                <a class="item" href="#">Link Item</a>
+                <a class="item" href="#">Link Item</a>
+                <div class="divider"></div>
+                <div class="header">Header Item</div>
+                <div class="item">
+                    <i class="dropdown icon"></i>
+                    Sub Menu
+                    <div class="menu">
+                        <a class="item" href="#">Link Item</a>
+                        <a class="item" href="#">Link Item</a>
+                    </div>
+                </div>
+                <a class="item" href="#">Link Item</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--todo pronaci pogodnu pocetnu pozadinu; Postaviti sve elemente na sredinu; smanjiti border; social links;-->
+
+<div id="first" class="ui grid sixteen wide column center aligned">
+    <div class="headPage">
+        <h5>Zdravo, ja sam</h5>
+        <h1>Nikola Maletić</h1>
+        <h5 style="color: white">Web developer</h5>
+        <div class="ui center aligned grid">
+            <div class="icons">
+            <i class="ui large circular facebook f icon"></i>
+            <i class="ui large circular instagram icon"></i>
+            <i class="ui large circular mail outline icon"></i>
+            </div>
+
+            <div class="scroll-btn">
+                <a href="#">
+		<span class="mouse">
+			<span>
+			</span>
+		</span>
+                </a>
+                <!--<p>scroll me</p>-->
+            </div>
+
+        </div>
+
+    </div>
+    <div style="top:96%;position: relative;" id="21"></div>
+</div>
+
+<div style="margin: 0 0 0 0;" id="second" class="ui grid sixteen wide column">
+    <div class="ui grid twelve wide column centered aligned middle aligned">
+
+        <h1 style="text-align: center;padding-bottom: 4rem">Nekoliko reči o sebi.</h1>
+
+        <div class="four wide column">
+            <img class="ui medium circular image" src="images/profile.jpg" alt="Profile picture"/>
+        </div>
+
+        <div class="eleven wide column">
+            <p style="font-size: 20px; text-align: justify">
+                Lorem Ipsum is simply
+                dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when
+                an
+                unknown printer took a galley of type and scrambled it to make a type specimen book. It has
+                survived not only five centuries, but also the leap into electronic typesetting, remaining
+                essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
+                containing Lorem Ipsum passages, and more recently with desktop publishing software like
+                Aldus
+                PageMaker including versions of Lorem Ipsum.
+            </p>
+        </div>
+    </div>
+</div>
+
+<div id="third" class="ui grid sixteen wide column">
+    <div class="ui grid twelve wide column centered aligned">
+        <div class="seven wide column">
+            <h2>Profil</h2>
+            <p style="font-size: 20px; text-align: justify">
+                unknown printer took a galley of type and scrambled it to make a type specimen book. It has
+                survived not only five centuries, but also the leap into electronic typesetting, remaining
+                essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
+            </p>
+
+            <p class="infoHead">Puno ime:</p>
+            <p class="infoDetails">Nikola Maletić</p>
+
+            <p class="infoHead">Datum rođenja:</p>
+            <p class="infoDetails">20 Decembar</p>
+
+            <p class="infoHead">Student:</p>
+            <p class="infoDetails">Računarski fakultet</p>
+
+            <p class="infoHead">WebSite:</p>
+            <p class="infoDetails">www.maleta.rs</p>
+
+            <p class="infoHead">Skype:</p>
+            <p class="infoDetails">maleta96@gmail.com</p>
+
+            <p class="infoHead">Email:</p>
+            <p class="infoDetails">nmmaleta@gmail.com</p>
+            <p class="infoDetails">nikolamaletic@outlook.com</p>
+
+        </div>
+        <div class="seven wide column">
+            <h2>Znanje</h2>
+            <p style="font-size: 20px; text-align: justify">
+                unknown printer took a galley of type and scrambled it to make a type specimen book. It has
+                survived not only five centuries, but also the leap into electronic typesetting, remaining
+                essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
+            </p>
+            <div class="ui active progress" id="pHTML">
+                <div class="bar">
+                    <div class="progress"></div>
+                </div>
+                <div class="label">HTML</div>
+            </div>
+            <div class="ui active progress" id="pCSS">
+                <div class="bar">
+                    <div class="progress"></div>
+                </div>
+                <div class="label">CSS3</div>
+            </div>
+            <div class="ui active progress" id="pJS">
+                <div class="bar">
+                    <div class="progress"></div>
+                </div>
+                <div class="label">JavaScrip</div>
+            </div>
+            <div class="ui active progress" id="pAngular">
+                <div class="bar">
+                    <div class="progress"></div>
+                </div>
+                <div class="label">Angular</div>
+            </div>
+            <div class="ui active progress" id="pPHP">
+                <div class="bar">
+                    <div class="progress"></div>
+                </div>
+                <div class="label left floated">PHP</div>
+            </div>
+            <div class="ui active progress" id="pC">
+                <div class="bar">
+                    <div class="progress"></div>
+                </div>
+                <div class="label left floated">C</div>
+            </div>
+            <div class="ui active progress" id="pNode">
+                <div class="bar">
+                    <div class="progress"></div>
+                </div>
+                <div class="label">NodeJS</div>
+            </div>
+            <div class="ui active progress" id="pMySQL">
+                <div class="bar">
+                    <div class="progress"></div>
+                </div>
+                <div class="label left floated">MySQL</div>
+            </div>
+            <div class="ui active progress" id="pPhotoShop">
+                <div class="bar">
+                    <div class="progress"></div>
+                </div>
+                <div class="label left floated">PhotoShop</div>
+            </div>
+            <div class="ui active progress" id="pIllustrator">
+                <div class="bar">
+                    <div class="progress"></div>
+                </div>
+                <div class="label left floated">Illustrator</div>
+            </div>
+        </div>
+
+        <div class="sixteen wide column centered aligned">
+            <button style="padding: 1rem 3rem 1rem 3rem" class="ui black basic icon button ">
+                <i class="download icon"></i>
+                Preuzmite CV
+            </button>
+            <!--todo dugme hover menja boju-->
+        </div>
+    </div>
+
+</div>
+
+<div class="ui grid middle aligned centered aligned imageDiv">
+    <div class="sixteen wide column center aligned">
+        <h1 style="color: white">
+            Želite da me kontaktirate? Spreman sam 24/7
+        </h1>
+        <button class="ui inverted button">
+            Zaposli me
+        </button>
+    </div>
+</div>
+
+
+<div id="fourth">
+
+    <div class="ui grid sixteen wide column center aligned timelineHeader">
+        <span>Obrazovanje</span>
+    </div>
+
+    <ul class="timeline">
+        <!-- Item 1 -->
+        <li>
+            <div class="direction-r">
+                <div class="flag-wrapper">
+                    <span class="hexa"></span>
+                    <span class="flag">ETŠ "Nikola Tesla"</span>
+                    <span class="time-wrapper"><span class="time">Septembar 2011 - Jun 2015</span></span>
+                </div>
+                <div class="desc">Lorem ipsum Nisi labore aute do aute culpa magna nulla voluptate exercitation deserunt proident.</div>
+            </div>
+        </li>
+
+        <!-- Item 2 -->
+        <li>
+            <div class="direction-l">
+                <div class="flag-wrapper">
+                    <span class="hexa"></span>
+                    <span class="flag">Računarski fakultet</span>
+                    <span class="time-wrapper"><span class="time">Septembar 2015</span></span>
+                </div>
+                <div class="desc">Lorem ipsum In ut sit in dolor nisi ex magna eu anim anim tempor dolore aliquip enim cupidatat laborum dolore.</div>
+            </div>
+        </li>
+    </ul>
+
+    <div class="ui grid sixteen wide column center aligned timelineHeaderSecond">
+        <span>Radno iskustvo</span>
+    </div>
+
+    <ul class="timeline timelineSecond">
+        <!-- Item 1 -->
+        <li>
+            <div class="direction-r">
+                <div class="flag-wrapper">
+                    <span class="hexa"></span>
+                    <span class="flag">Želim postati poduzetnik</span>
+                    <span class="time-wrapper"><span class="time">Avgust 2017</span></span>
+                </div>
+                <div class="desc">Lorem ipsum Nisi labore aute do aute culpa magna nulla voluptate exercitation deserunt proident.</div>
+            </div>
+        </li>
+
+        <!-- Item 2 -->
+        <li>
+            <div class="direction-l">
+                <div class="flag-wrapper">
+                    <span class="hexa"></span>
+                    <span class="flag">Računarski fakultet</span>
+                    <span class="time-wrapper"><span class="time">Dec 2014</span></span>
+                </div>
+                <div class="desc">Lorem ipsum In ut sit in dolor nisi ex magna eu anim anim tempor dolore aliquip enim cupidatat laborum dolore.</div>
+            </div>
+        </li>
+    </ul>
+
+</div>
+
+
+</body>
+</html>
