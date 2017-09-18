@@ -105,16 +105,24 @@ body, html {
     font-family: 'Lobster',
     cursive;letter-spacing: 2px;
 }
+
+.TabHeadSecond{
+    text-align: center;
+    font-family: 'Lobster',
+    cursive;letter-spacing: 2px;
+}
 .five{
     background: url("https://wallpaperlayer.com/img/2015/8/telescope-wallpaper-3979-4199-hd-wallpapers.jpg") no-repeat center;
     min-height: 15rem;
     background-attachment: fixed;
     background-size: cover;
     margin-top: 4rem!important;
-    height: 50vh;
+    height: 55vh;
 }
 
-
+.ui.card, .ui.cards>.card{
+    width: 50rem!important;
+}
 /*SLIDE FIVE*/
 
 /*Scroll Down*/
@@ -580,3 +588,4 @@ body, html {
 }
 
 /*TIMELINE*/
+

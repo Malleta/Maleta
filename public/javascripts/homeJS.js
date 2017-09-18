@@ -1,6 +1,9 @@
-var app = angular.module('myApp', []);
+let app = angular.module('myApp', []);
+
 app.controller('myCtrl',['$scope', '$http', function ($scope, $http) {
 
+    $scope.uMail ={
+    };
 
     AOS.init({
         duration: 900
@@ -77,5 +80,12 @@ app.controller('myCtrl',['$scope', '$http', function ($scope, $http) {
     });
 
 
+    $scope.sendMail = function () {
+        console.log($scope.uMail)
+        $http.post('/sendMail', {}, {params: $scope.uMail})
+            .then(function (res) {
+                console.log('uspesno')
+            });
+    }
 
 }]);
