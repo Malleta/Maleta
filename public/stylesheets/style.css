@@ -1,6 +1,7 @@
 body, html {
     height: 100%;
     font: 14px "Roboto", Helvetica, Arial, sans-serif;
+    background-color: #fff;
 }
 
 /*SEMANTIC*/
@@ -589,3 +590,25 @@ body, html {
 
 /*TIMELINE*/
 
+/*FOOTER*/
+.mail{
+    padding: 2rem!important;
+}
+
+.footerIcons i {
+    font-size: 4.5rem;
+    padding: 0 2rem 0 2rem!important;
+    color: rgba(0,0,0,.3);
+}
+
+.footerIcons{
+    padding: 2rem 0 3rem 0!important;
+}
+
+.greyBackground{
+    background-color: rgb(243, 243, 243)
+}
+
+.footer{
+    padding-top:2rem!important;
+}
