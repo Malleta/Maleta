@@ -100,30 +100,34 @@ body, html {
 /*FOURTH SLIDE*/
 
 /*SLIDE FIVE*/
-.TabHead{
+.TabHead {
     text-align: center;
     padding-bottom: 4rem;
     font-family: 'Lobster',
-    cursive;letter-spacing: 2px;
+    cursive;
+    letter-spacing: 2px;
 }
 
-.TabHeadSecond{
+.TabHeadSecond {
     text-align: center;
     font-family: 'Lobster',
-    cursive;letter-spacing: 2px;
+    cursive;
+    letter-spacing: 2px;
 }
-.five{
+
+.five {
     background: url("https://wallpaperlayer.com/img/2015/8/telescope-wallpaper-3979-4199-hd-wallpapers.jpg") no-repeat center;
     min-height: 15rem;
     background-attachment: fixed;
     background-size: cover;
-    margin-top: 4rem!important;
+    margin-top: 4rem !important;
     height: 55vh;
 }
 
-.ui.card, .ui.cards>.card{
-    width: 50rem!important;
+.ui.card, .ui.cards > .card {
+    width: 50rem !important;
 }
+
 /*SLIDE FIVE*/
 
 /*Scroll Down*/
@@ -592,28 +596,126 @@ body, html {
 
 /*FOOTER*/
 
-
 .footerIcons i {
     font-size: 4.5rem;
-    padding: 0 2rem 0 2rem!important;
-    color: rgba(0,0,0,.3);
+    padding: 0 2rem 0 2rem !important;
+    color: rgba(0, 0, 0, .3);
 }
 
-.footerIcons{
-    padding: 2rem 0 3rem 0!important;
+.footerIcons {
+    padding: 2rem 0 3rem 0 !important;
 }
 
-.greyBackground{
+.greyBackground {
     background-color: rgb(243, 243, 243)
 }
 
-.footer{
-    padding-top:2rem!important;
+.footer {
+    padding-top: 2rem !important;
 }
-.contactIcons{
+
+.contactIcons {
     /*text-align: left!important;*/
     font-size: 1.6rem
 }
-.contactIcons i{
-    margin-bottom: 1rem!important;
+
+.contactIcons i {
+    margin-bottom: 1rem !important;
+}
+
+/*returnToTop*/
+.backtotop,
+.backtotop::after,
+.backtotop::before,
+.backtotop .backtotop-morph
+{
+    transition: all 250ms ease-in-out 0s;
+}
+
+.backtotop {
+    border: 0px dotted black;
+    width: 50px;
+    height: 50px;
+    right: 25px;
+    bottom: 20px;
+    position: fixed;
+
+    cursor: pointer;
+    transform: rotate(0deg);
+    transform-origin: center center 0;
+    z-index: 1000;
+}
+.backtotop::before {
+    width: 18px;
+    height: 4px;
+    left: 6px;
+    top: 56%;
+    position: absolute;
+
+    background-color: black;
+    content: "";
+    transform: rotate(-45deg) translateY(-50%);
+    transform-origin: center top 0;
+}
+.backtotop::after {
+    width: 25px;
+    height: 4px;
+    right: 5px;
+    top: 50%;
+    position: absolute;
+
+    background-color: black;
+    content: "";
+    transform: rotate(45deg) translateY(-50%);
+    transform-origin: center top 0;
+}
+
+/*Hover*/
+.backtotop .backtotop-morph {
+    background-color: black;
+
+    width: 15px;
+    height: 4px;
+    left: 100%;
+    top: 45%;
+    position: absolute;
+
+    opacity: 0;
+    margin-bottom: -20px;
+    transform: translate(-50%);
+}
+.backtotop .backtotop-morph::before {
+    width: 0;
+    height: 0;
+    left: -7px;
+    top: -4px;
+    position: absolute;
+
+    border-color: transparent black transparent transparent;
+    border-style: solid;
+    border-width: 6px 10px 6px 0;
+    content: "";
+}
+.backtotop:hover {
+    transform: rotate(90deg);
+}
+.backtotop:hover .backtotop-morph {
+    left: 40%;
+    opacity: 1;
+}
+.backtotop:hover::before {
+    width: 30px;
+    left: 10px;
+    top: 30%;
+
+    background-color: black;
+    transform: rotate(0deg) translateY(-8px);
+}
+.backtotop:hover::after {
+    width: 30px;
+    right: 10px;
+    top: 60%;
+
+    background-color: black;
+    transform: rotate(0deg) translateY(8px);
 }

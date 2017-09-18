@@ -11,10 +11,22 @@ app.controller('myCtrl',['$scope', '$http', function ($scope, $http) {
 
     $(".scroll-btn").click(function() {
         $('html,body').animate({
-                scrollTop: $("#21").offset().top},
+                scrollTop: $("#second").offset().top -28},
             1000);
     });
+
     $scope.navBar = true;
+
+    $(".mail").click(function() {
+        $('html,body').animate({
+                scrollTop: $(".footer").offset().top -30},
+            1000);
+    });
+    $(".contactMe").click(function() {
+        $('html,body').animate({
+                scrollTop: $(".footer").offset().top -30},
+            1000);
+    });
 
     (function ($) {
         $(document).ready(function(){
@@ -34,9 +46,22 @@ app.controller('myCtrl',['$scope', '$http', function ($scope, $http) {
                     }
                 });
             });
-
         });
     }(jQuery));
+
+    // ===== Scroll to Top ====
+    $(window).scroll(function() {
+        if ($(this).scrollTop() >= 600) {        // If page is scrolled more than 50px
+            $('.backtotop').fadeIn({duration  : 400});    // Fade in the arrow
+        } else {
+            $('.backtotop').fadeOut({duration  : 400});   // Else fade out the arrow
+        }
+    });
+    $('.backtotop').click(function() {      // When arrow is clicked
+        $('body,html').animate({
+            scrollTop : 0                       // Scroll to top of body
+        }, 500);
+    });
 
 
 
