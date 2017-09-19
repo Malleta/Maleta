@@ -2,6 +2,26 @@
 <html ng-app="myApp">
 
 <% include partials/head.ejs %>
+
+<script type="text/javascript">
+    !function(name,path,ctx){
+        var latest,prev=name!=='Keen'&&window.Keen?window.Keen:false;ctx[name]=ctx[name]||{ready:function(fn){var h=document.getElementsByTagName('head')[0],s=document.createElement('script'),w=window,loaded;s.onload=s.onerror=s.onreadystatechange=function(){if((s.readyState&&!(/^c|loade/.test(s.readyState)))||loaded){return}s.onload=s.onreadystatechange=null;loaded=1;latest=w.Keen;if(prev){w.Keen=prev}else{try{delete w.Keen}catch(e){w.Keen=void 0}}ctx[name]=latest;ctx[name].ready(fn)};s.async=1;s.src=path;h.parentNode.insertBefore(s,h)}}
+    }('KeenAsync','https://d26b395fwzu5fz.cloudfront.net/keen-tracking-1.1.3.min.js',this);
+
+    KeenAsync.ready(function(){
+        // Configure a client instance
+        var client = new KeenAsync({
+            projectId: '59c13d34c9e77c00015e76a5',
+            writeKey: '60770813FD587108058E005760DF44F13B98A532048F92E26276AD44877273581187D1C979FF5A2DDFB464ACE63DF6B210C63D2D800520F7A0CA64B0ECB58D2C2E0472413C3611280DEFB118BFA8CD4E6675E99B96683549DC67FC925EDC72B2'
+        });
+
+        // Record an event
+        client.recordEvent('pageviews', {
+            title: document.title
+        });
+    });
+</script>
+
 <body ng-controller="myCtrl">
 <div class="se-pre-con"></div>
 <!--todo ng-clock i loading animation-->
