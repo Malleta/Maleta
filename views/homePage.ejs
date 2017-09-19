@@ -3,7 +3,8 @@
 
 <% include partials/head.ejs %>
 <body ng-controller="myCtrl">
-
+<div class="se-pre-con"></div>
+<!--todo ng-clock i loading animation-->
 <!--todo centrirai concent, scrollOnClick-->
 <div ng-hide="false" class="ui fixed inverted menu">
     <div class="ui container">
@@ -422,18 +423,25 @@
     <div class="backtotop-morph"></div>
 </div>
 
+
+
 <div class="ui grid sixteen wide column center aligned greyBackground">
     <div style="padding: 2rem" class="ten wide column">
         <p>© Copyright 2017 : Nikola Maletić. All Rights Reserved.</p>
     </div>
 </div>
 
+
+
 <script type="text/javascript" src="javascripts/fundamental/jquery.min.js"></script>
 <script type="text/javascript" src="javascripts/fundamental/angular.min.js"></script>
 <script type="text/javascript" src="javascripts/fundamental/semantic.min.js"></script>
 <script type="text/javascript" src="javascripts/fundamental/glide.min.js"></script>
 <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+
 <script type="text/javascript" src="javascripts/homeJS.js"></script>
+
 
 <script>
     $("#Glide").glide({

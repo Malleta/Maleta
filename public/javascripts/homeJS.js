@@ -106,11 +106,15 @@ app.controller('myCtrl',['$scope', '$http', function ($scope, $http) {
 
 
     $scope.sendMail = function () {
-        console.log($scope.uMail)
         $http.post('/sendMail', {}, {params: $scope.uMail})
             .then(function (res) {
                 console.log('uspesno')
             });
-    }
+    };
+
+//    loader
+    setTimeout(function () {
+        $(".se-pre-con").fadeOut("slow");
+    },500)
 
 }]);
