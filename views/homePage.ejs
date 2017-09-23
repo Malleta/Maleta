@@ -1,12 +1,39 @@
 <!DOCTYPE html>
 <html ng-app="myApp">
 
-<% include partials/head.ejs %>
+<head>
+    <title>Nikola Maletić</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/stylesheets/semantic.min.css"/>
+    <link rel="stylesheet" href="/stylesheets/glide.core.min.css"/>
+    <link rel="stylesheet" href="/stylesheets/glide.theme.min.css"/>
+    <link rel="stylesheet" href="/stylesheets/style.css"/>
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <!--todo poskidati sve linkove-->
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One|Lobster|Reenie+Beanie|Roboto" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/components/icon.min.css" rel="stylesheet">
+    <link rel="stylesheet"
+          href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+
+</head>
+
 
 <body ng-controller="myCtrl">
-<div class="se-pre-con"></div>
-<!--todo ng-clock i loading animation-->
-<!--todo centrirai concent, scrollOnClick-->
+
+<div class="overlay">
+    <div id="loader">
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+</div>
+
 <div ng-hide="false" class="ui fixed inverted menu">
     <div class="ui container">
         <a href="#" class="header item">
@@ -425,13 +452,11 @@
 </div>
 
 
-
 <div class="ui grid sixteen wide column center aligned greyBackground">
     <div style="padding: 2rem" class="ten wide column">
         <p>© Copyright 2017 : Nikola Maletić. All Rights Reserved.</p>
     </div>
 </div>
-
 
 
 <script type="text/javascript" src="javascripts/fundamental/jquery.min.js"></script>
@@ -443,12 +468,5 @@
 
 <script type="text/javascript" src="javascripts/homeJS.js"></script>
 
-
-<script>
-    $("#Glide").glide({
-        type: "carousel",
-        autoplay: false
-    });
-</script>
 </body>
 </html>

@@ -108,13 +108,20 @@ app.controller('myCtrl',['$scope', '$http', function ($scope, $http) {
     $scope.sendMail = function () {
         $http.post('/sendMail', {}, {params: $scope.uMail})
             .then(function (res) {
-                console.log('uspesno')
             });
     };
 
-//    loader
+
+    //SLIDER
+    $("#Glide").glide({
+        type: "carousel",
+        autoplay: false
+    });
+
+    // LOADER
     setTimeout(function () {
-        $(".se-pre-con").fadeOut("slow");
-    },500)
+        $(".overlay").fadeOut("slow");
+    }, 1500);
+
 
 }]);
