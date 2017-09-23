@@ -120,7 +120,8 @@ app.controller('myCtrl',['$scope', '$http', function ($scope, $http) {
 
     // LOADER
     setTimeout(function () {
-        $(".overlay").fadeOut("slow");
+        $(".overlay").fadeOut(1200);
+        $('body').removeClass('noScroll');
     }, 1500);
 
 

@@ -801,3 +801,7 @@ body, html {
     opacity:1;
     z-index:1001;
 }
+
+.noScroll{
+    overflow: hidden;
+}
