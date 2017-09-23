@@ -64,8 +64,6 @@ app.controller('myCtrl',['$scope', '$http', function ($scope, $http) {
     });
 
 
-
-
     $('#pHTML').progress({
         percent: 89
     });
@@ -117,7 +115,6 @@ app.controller('myCtrl',['$scope', '$http', function ($scope, $http) {
         type: "carousel",
         autoplay: false
     });
-
     // LOADER
     setTimeout(function () {
         $(".overlay").fadeOut(1200);

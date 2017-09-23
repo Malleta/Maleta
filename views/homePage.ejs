@@ -3,7 +3,7 @@
 
 <head>
     <title>Nikola Maletić</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="/stylesheets/semantic.min.css"/>
     <link rel="stylesheet" href="/stylesheets/glide.core.min.css"/>
@@ -12,12 +12,12 @@
     <link rel="stylesheet" href="/stylesheets/aos.css"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poiret+One|Lobster|Reenie+Beanie|Roboto"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/components/icon.min.css"/>
-    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"/>
+    <link rel="stylesheet"
+          href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"/>
 </head>
 
 
 <body class="noScroll" ng-controller="myCtrl">
-
 <div class="overlay">
     <div id="loader">
         <ul>
@@ -46,12 +46,12 @@
 </div>
 
 <!--Head-->
-<div id="first" class="ui grid sixteen wide column center aligned">
+<div id="first" class="computer only ui grid sixteen wide column center aligned">
     <div class="headPage">
         <h5>Zdravo, ja sam</h5>
         <h1>Nikola Maletić</h1>
         <h5 style="color: white">Web developer</h5>
-        <div class="ui center aligned grid">
+        <div class="ui grid center aligned">
             <div class="sixteen wide column icons">
                 <a href="https://www.facebook.com/leMaleta88" target="_blank">
                     <i class="ui large circular facebook f icon"></i>
@@ -61,9 +61,7 @@
                 </a>
                 <i class="ui large circular mail outline icon"></i>
             </div>
-
-
-            <div class="sixteen wide column scroll-btn">
+            <div class="scroll-btn">
                 <a href="#">
 		<span class="mouse">
 			<span>
@@ -72,21 +70,36 @@
                 </a>
                 <!--<p>scroll me</p>-->
             </div>
-
         </div>
-
     </div>
 </div>
+<!--Mobile/Tablet-->
+<div id="first" class="tablet only mobile only ui grid sixteen wide column center aligned">
+    <div class="headPage">
+        <h5>Zdravo, ja sam</h5>
+        <h1>Nikola Maletić</h1>
+        <h5 style="color: white">Web developer</h5>
+        <div class="ui grid center aligned">
+            <div class="sixteen wide column icons">
+                <a href="https://www.facebook.com/leMaleta88" target="_blank">
+                    <i class="ui large circular facebook f icon"></i>
+                </a>
+                <a href="https://www.instagram.com/le_maleta" target="_blank">
+                    <i class="ui large circular instagram icon"></i>
+                </a>
+                <i class="ui large circular mail outline icon"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
 <!--About Myself-->
-<div style="margin: 0 0 0 0;" id="second" class="ui grid sixteen wide column">
+<div style="margin: 0 0 0 0;" id="second" class="computer only ui grid sixteen wide column">
     <div class="ui grid twelve wide column centered aligned middle aligned">
-
         <h1 class="TabHead">Nekoliko reči o sebi</h1>
-
         <div class="four wide column">
             <img class="ui medium circular image" src="images/profile.jpg" alt="Profile picture"/>
         </div>
-
         <div class="eleven wide column">
             <p style="font-size: 20px; text-align: justify">
                 Lorem Ipsum is simply
@@ -103,8 +116,30 @@
         </div>
     </div>
 </div>
+<!--Mobile/Tablet-->
+<div style="margin: 0 0 0 0;" class="tablet only mobile only ui grid sixteen wide column center aligned">
+    <h1 class="TabHeadMobile">Nekoliko reči o sebi</h1>
+    <div class="fourteen wide column">
+        <img class="ui medium circular image" src="images/profile.jpg" alt="Profile picture"/>
+    </div>
+    <div class="sixteen wide column">
+        <p style="font-size: 20px; text-align: justify">
+            Lorem Ipsum is simply
+            dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when
+            an
+            unknown printer took a galley of type and scrambled it to make a type specimen book. It has
+            survived not only five centuries, but also the leap into electronic typesetting, remaining
+            essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
+            containing Lorem Ipsum passages, and more recently with desktop publishing software like
+            Aldus
+            PageMaker including versions of Lorem Ipsum.
+        </p>
+    </div>
+</div>
+
 <!--Skills-->
-<div id="third" class="ui grid sixteen wide column">
+<div id="third" class="computer only ui grid sixteen wide column">
     <div class="ui grid twelve wide column centered aligned">
         <div class="seven wide column">
             <h2 style="font-family: 'Lobster', cursive;">Profil</h2>
@@ -214,6 +249,118 @@
     </div>
 
 </div>
+<!--Mobile/Tablet-->
+<div id="third" class="tablet only mobile only ui grid sixteen wide column centered aligned">
+
+    <div class="sixteen wide column">
+        <h2 style="font-family: 'Lobster', cursive;">Profil</h2>
+        <p style="font-size: 20px; text-align: justify">
+            unknown printer took a galley of type and scrambled it to make a type specimen book. It has
+            survived not only five centuries, but also the leap into electronic typesetting, remaining
+            essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
+        </p>
+
+        <p class="infoHead">Puno ime:</p>
+        <p class="infoDetails">Nikola Maletić</p>
+
+        <p class="infoHead">Datum rođenja:</p>
+        <p class="infoDetails">20 Decembar</p>
+
+        <p class="infoHead">Student:</p>
+        <p class="infoDetails">Računarski fakultet</p>
+
+        <p class="infoHead">WebSite:</p>
+        <p class="infoDetails">www.maleta.rs</p>
+
+        <p class="infoHead">Skype:</p>
+        <p class="infoDetails">maleta96@gmail.com</p>
+
+        <p class="infoHead">Email:</p>
+        <p class="infoDetails">nmmaleta@gmail.com</p>
+        <p class="infoDetails">nikolamaletic@outlook.com</p>
+
+    </div>
+
+    <div class="sixteen wide column">
+        <h2 style="font-family: 'Lobster', cursive;">Znanje</h2>
+        <p style="font-size: 20px; text-align: justify">
+            unknown printer took a galley of type and scrambled it to make a type specimen book. It has
+            survived not only five centuries, but also the leap into electronic typesetting, remaining
+            essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
+        </p>
+        <div class="ui active progress" id="pHTML">
+            <div class="bar">
+                <div class="progress"></div>
+            </div>
+            <div class="label">HTML</div>
+        </div>
+        <div class="ui active progress" id="pCSS">
+            <div class="bar">
+                <div class="progress"></div>
+            </div>
+            <div class="label">CSS3</div>
+        </div>
+        <div class="ui active progress" id="pJS">
+            <div class="bar">
+                <div class="progress"></div>
+            </div>
+            <div class="label">JavaScrip</div>
+        </div>
+        <div class="ui active progress" id="pAngular">
+            <div class="bar">
+                <div class="progress"></div>
+            </div>
+            <div class="label">Angular</div>
+        </div>
+        <div class="ui active progress" id="pPHP">
+            <div class="bar">
+                <div class="progress"></div>
+            </div>
+            <div class="label left floated">PHP</div>
+        </div>
+        <div class="ui active progress" id="pC">
+            <div class="bar">
+                <div class="progress"></div>
+            </div>
+            <div class="label left floated">C</div>
+        </div>
+        <div class="ui active progress" id="pNode">
+            <div class="bar">
+                <div class="progress"></div>
+            </div>
+            <div class="label">NodeJS</div>
+        </div>
+        <div class="ui active progress" id="pMySQL">
+            <div class="bar">
+                <div class="progress"></div>
+            </div>
+            <div class="label left floated">MySQL</div>
+        </div>
+        <div class="ui active progress" id="pPhotoShop">
+            <div class="bar">
+                <div class="progress"></div>
+            </div>
+            <div class="label left floated">PhotoShop</div>
+        </div>
+        <div class="ui active progress" id="pIllustrator">
+            <div class="bar">
+                <div class="progress"></div>
+            </div>
+            <div class="label left floated">Illustrator</div>
+        </div>
+    </div>
+
+    <div class="sixteen wide column centered aligned">
+        <a href="https://drive.google.com/file/d/0B70TpMNWhWKoVUktU1lIM05mWGs/view?usp=sharing" target="_blank"
+           style="padding: 1rem 3rem 1rem 3rem" class="ui black basic icon button ">
+            <i class="download icon"></i>
+            Preuzmite CV
+        </a>
+        <!--todo dugme hover menja boju-->
+    </div>
+
+</div>
+
 <!--Contact Button-->
 <div class="ui grid middle aligned centered aligned imageDiv contactMe">
     <div class="sixteen wide column center aligned">
@@ -225,10 +372,10 @@
         </button>
     </div>
 </div>
-<!--TimeLine-->
-<div id="fourth">
 
-    <div class="ui grid sixteen wide column center aligned timelineHeader">
+<!--TimeLine-->
+<div class="computer only ui grid sixteen wide column centered aligned">
+<div class="ui grid sixteen wide column center aligned timelineHeader">
         <span>Radno iskustvo</span>
     </div>
 
@@ -291,120 +438,210 @@
         </li>
     </ul>
 </div>
+<!--Mobile/Tablet-->
+<div class="tablet only mobile only ui grid sixteen wide column centered aligned">
+    <div class="ui grid sixteen wide column center aligned timelineHeader">
+        <span>Radno iskustvo</span>
+    </div>
 
-<div class="greyBackground">
-    <div class="five ui grid twelve wide column centered aligned">
-        <div class="sixteen wide column" style="padding-top: 3rem">
-            <h1 class="TabHeadSecond">Nekoliko lepih reči</h1>
-
-            <div id="Glide" class="glide">
-                <div class="glide__wrapper">
-                    <ul class="glide__track">
-                        <li class="glide__slide">
-                            <div class="ui grid center aligned">
-                                <div class="ui raised card">
-                                    <div class="content">
-                                        <div class="header">Nikola Nikolic</div>
-                                        <div class="meta">
-                                            <span class="category">Web programer</span>
-                                        </div>
-                                        <div class="description">
-                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting
-                                                industry.
-                                                Lorem Ipsum has been the industry's standard dummy text ever since the
-                                                1500s, when an unknown printer took a galley of type and scrambled it to
-                                                make a type specimen book.</p>
-                                        </div>
-                                    </div>
-                                    <div class="extra content">
-                                        <div class="right floated author">
-                                            <img class="ui avatar image"
-                                                 src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/ce54bf11889067.562541ef7cde4.png">
-                                            Nikola
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="glide__slide">
-                            <div class="ui grid center aligned">
-                                <div class="ui raised card">
-                                    <div class="content">
-                                        <div class="header">Nikola Nikolic</div>
-                                        <div class="meta">
-                                            <span class="category">Web programer</span>
-                                        </div>
-                                        <div class="description">
-                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting
-                                                industry.
-                                                Lorem Ipsum has been the industry's standard dummy text ever since the
-                                                1500s, when an unknown printer took a galley of type and scrambled it to
-                                                make a type specimen book.</p>
-                                        </div>
-                                    </div>
-                                    <div class="extra content">
-                                        <div class="right floated author">
-                                            <img class="ui avatar image"
-                                                 src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/ce54bf11889067.562541ef7cde4.png">
-                                            Nikola
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="glide__slide">
-                            <div class="ui grid center aligned">
-                                <div class="ui raised card">
-                                    <div class="content">
-                                        <div class="header">Nikola Nikolic</div>
-                                        <div class="meta">
-                                            <span class="category">Web programer</span>
-                                        </div>
-                                        <div class="description">
-                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting
-                                                industry.
-                                                Lorem Ipsum has been the industry's standard dummy text ever since the
-                                                1500s, when an unknown printer took a galley of type and scrambled it to
-                                                make a type specimen book.</p>
-                                        </div>
-                                    </div>
-                                    <div class="extra content">
-                                        <div class="right floated author">
-                                            <img class="ui avatar image"
-                                                 src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/ce54bf11889067.562541ef7cde4.png">
-                                            Nikola
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="glide__arrows">
-                    <button class="glide__arrow prev" data-glide-dir="<">prev</button>
-                    <button class="glide__arrow next" data-glide-dir=">">next</button>
+    <ul class="timelineMobile">
+        <!-- Item 1 -->
+        <li>
+            <div class="direction-r">
+                <div class="flag-wrapper">
+                    <span class="hexa"></span>
+                    <div data-aos="fade-left" data-aos-once="true">
+                        <span class="flag">Želim postati poduzetnik</span>
+                        <span class="time-wrapper"><span class="time">Avgust 2017</span></span>
+                        <div class="desc">Lorem ipsum Nisi labore aute do aute culpa magna nulla voluptate exercitation
+                            deserunt
+                            proident.
+                        </div>
+                    </div>
                 </div>
             </div>
-            <!--todo ulepsati malo buttone-->
-        </div>
-    </div>
-    <div class="ui grid sixteen wide column footerIcons center aligned">
-        <i class="devicon-html5-plain"></i>
-        <i class="devicon-css3-plain"></i>
-        <i class="devicon-javascript-plain"></i>
-        <i class="devicon-angularjs-plain"></i>
-        <i class="devicon-nodejs-plain"></i>
-        <i class="devicon-mysql-plain"></i>
-        <i class="devicon-github-plain"></i>
-        <i class="devicon-photoshop-plain"></i>
-        <i class="devicon-illustrator-plain"></i>
-        <i class="devicon-webstorm-plain"></i>
+        </li>
+    </ul>
 
+    <div class="ui grid sixteen wide column center aligned timelineHeaderSecond">
+        <span>Obrazovanje</span>
+    </div>
+
+    <ul class="timelineMobile">
+        <!-- Item 1 -->
+        <li>
+            <div class="direction-l">
+                <div class="flag-wrapper">
+                    <span class="hexa"></span>
+                    <div data-aos="fade-right" data-aos-once="true">
+                        <span class="flag">Računarski fakultet</span>
+                        <span class="time-wrapper"><span class="time">Septembar 2015</span></span>
+                        <div class="desc">Lorem ipsum In ut sit in dolor nisi ex magna eu anim anim tempor dolore
+                            aliquip
+                            enim
+                            cupidatat laborum dolore.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <!-- Item 2 -->
+        <li>
+            <div class="direction-r">
+                <div class="flag-wrapper">
+                    <span class="hexa"></span>
+                    <div data-aos="fade-left" data-aos-once="true">
+                        <span class="flag">ETŠ "Nikola Tesla"</span>
+                        <span class="time-wrapper"><span class="time">Septembar 2011 - Jun 2015</span></span>
+                        <div class="desc">Lorem ipsum Nisi labore aute do aute culpa magna nulla voluptate exercitation
+                            deserunt
+                            proident.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
+
+<!--todo zameniti slider Slider-->
+<div class="computer only five ui grid sixteen wide column centered aligned">
+    <div class="greyBackground">
+        <div class="fiveSecond sixteen wide column">
+            <div class="sixteen wide column" style="padding-top: 3rem">
+                <h1 class="TabHeadSecond">Nekoliko lepih reči</h1>
+
+                <div id="Glide" class="glide">
+                    <div class="glide__wrapper">
+                        <ul class="glide__track">
+                            <li class="glide__slide">
+                                <div class="ui grid center aligned">
+                                    <div class="ui raised card">
+                                        <div class="content">
+                                            <div class="header">Nikola Nikolic</div>
+                                            <div class="meta">
+                                                <span class="category">Web programer</span>
+                                            </div>
+                                            <div class="description">
+                                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                                                    industry.
+                                                    Lorem Ipsum has been the industry's standard dummy text ever since
+                                                    the
+                                                    1500s, when an unknown printer took a galley of type and scrambled
+                                                    it to
+                                                    make a type specimen book.</p>
+                                            </div>
+                                        </div>
+                                        <div class="extra content">
+                                            <div class="right floated author">
+                                                <img class="ui avatar image"
+                                                     src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/ce54bf11889067.562541ef7cde4.png">
+                                                Nikola
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="glide__slide">
+                                <div class="ui grid center aligned">
+                                    <div class="ui raised card">
+                                        <div class="content">
+                                            <div class="header">Nikola Nikolic</div>
+                                            <div class="meta">
+                                                <span class="category">Web programer</span>
+                                            </div>
+                                            <div class="description">
+                                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                                                    industry.
+                                                    Lorem Ipsum has been the industry's standard dummy text ever since
+                                                    the
+                                                    1500s, when an unknown printer took a galley of type and scrambled
+                                                    it to
+                                                    make a type specimen book.</p>
+                                            </div>
+                                        </div>
+                                        <div class="extra content">
+                                            <div class="right floated author">
+                                                <img class="ui avatar image"
+                                                     src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/ce54bf11889067.562541ef7cde4.png">
+                                                Nikola
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="glide__slide">
+                                <div class="ui grid center aligned">
+                                    <div class="ui raised card">
+                                        <div class="content">
+                                            <div class="header">Nikola Nikolic</div>
+                                            <div class="meta">
+                                                <span class="category">Web programer</span>
+                                            </div>
+                                            <div class="description">
+                                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                                                    industry.
+                                                    Lorem Ipsum has been the industry's standard dummy text ever since
+                                                    the
+                                                    1500s, when an unknown printer took a galley of type and scrambled
+                                                    it to
+                                                    make a type specimen book.</p>
+                                            </div>
+                                        </div>
+                                        <div class="extra content">
+                                            <div class="right floated author">
+                                                <img class="ui avatar image"
+                                                     src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/ce54bf11889067.562541ef7cde4.png">
+                                                Nikola
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="glide__arrows">
+                        <button class="glide__arrow prev" data-glide-dir="<">prev</button>
+                        <button class="glide__arrow next" data-glide-dir=">">next</button>
+                    </div>
+                </div>
+                <!--todo ulepsati malo buttone-->
+            </div>
+        </div>
+        <div class="ui grid sixteen wide column footerIcons center aligned">
+            <i class="devicon-html5-plain"></i>
+            <i class="devicon-css3-plain"></i>
+            <i class="devicon-javascript-plain"></i>
+            <i class="devicon-angularjs-plain"></i>
+            <i class="devicon-nodejs-plain"></i>
+            <i class="devicon-mysql-plain"></i>
+            <i class="devicon-github-plain"></i>
+            <i class="devicon-photoshop-plain"></i>
+            <i class="devicon-illustrator-plain"></i>
+            <i class="devicon-webstorm-plain"></i>
+
+        </div>
     </div>
 </div>
 
+<div class="tablet only mobile only ui grid sixteen wide column footerIcons center aligned greyBackground">
+    <i class="devicon-html5-plain"></i>
+    <i class="devicon-css3-plain"></i>
+    <i class="devicon-javascript-plain"></i>
+    <i class="devicon-angularjs-plain"></i>
+    <i class="devicon-nodejs-plain"></i>
+    <i class="devicon-mysql-plain"></i>
+    <i class="devicon-github-plain"></i>
+    <i class="devicon-photoshop-plain"></i>
+    <i class="devicon-illustrator-plain"></i>
+    <i class="devicon-webstorm-plain"></i>
+
+</div>
+
+
+
 <!--todo form ispravnost-->
-<div class="ui grid twelve wide column footer">
+<div class="computer only ui grid twelve wide column footer">
     <div class="sixteen wide column"><h1 class="TabHead">Kontaktirajte me</h1></div>
     <div class="two wide column"></div>
 
@@ -441,6 +678,42 @@
         <i class="mail icon"></i><span>maleta96@gmail.com</span><br>
         <i class="mobile icon"></i><span>+381 60 50 40 495</span><br>
     </div>
+</div>
+<!--Mobile/Tablet-->
+<div class="tablet only mobile only ui grid twelve wide column footer">
+    <div class="sixteen wide column"><h1 class="TabHead">Kontaktirajte me</h1></div>
+    <div class="ui grid sixteen wide column center aligned contactIcons">
+        <i class="user circle icon"></i><span>Nikola Maletić</span><br>
+        <i class="marker icon"></i><span>Beograd, Srbija</span><br>
+        <i class="mail icon"></i><span>nmmaleta@gmail.com</span><br>
+        <i class="mail icon"></i><span>maleta96@gmail.com</span><br>
+        <i class="mobile icon"></i><span>+381 60 50 40 495</span><br>
+    </div>
+    <div class="sixteen wide column raised">
+        <form class="ui form">
+            <div class="two fields">
+                <div class="field">
+                    <label>Ime</label>
+                    <input type="text" ng-model="uMail.uName" placeholder="Ime">
+                </div>
+                <div class="field">
+                    <label>Email</label>
+                    <input type="text" ng-model="uMail.uEmail" placeholder="Email">
+                </div>
+            </div>
+
+            <div class="field">
+                <label>Naslov</label>
+                <input type="text" ng-model="uMail.uSubject" placeholder="Naslov / predmet">
+            </div>
+            <div class="field">
+                <label>Poruka</label>
+                <textarea ng-model="uMail.uMessage" placeholder="Poruka"></textarea>
+            </div>
+            <button ng-click="sendMail()" class="ui button black fluid" type="submit">Pošalji</button>
+        </form>
+    </div>
+
 </div>
 
 <!-- Return to Top -->

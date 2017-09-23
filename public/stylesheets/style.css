@@ -30,14 +30,14 @@ body, html {
     text-align: center;
     letter-spacing: 6px;
     color: white;
-    font-size: 6rem;
+    font-size: 6em;
 }
 
 .headPage h5 {
     font-family: 'Poiret One', sans-serif;
     text-align: center;
     color: white;
-    font-size: 2rem;
+    font-size: 2em;
 }
 
 #first {
@@ -102,7 +102,7 @@ body, html {
 /*SLIDE FIVE*/
 .TabHead {
     text-align: center;
-    padding-bottom: 4rem;
+    margin-bottom: 4rem;
     font-family: 'Lobster',
     cursive;
     letter-spacing: 2px;
@@ -116,11 +116,14 @@ body, html {
 }
 
 .five {
+    margin-top: 4rem !important;
+}
+
+.fiveSecond{
     background: url("https://img05.deviantart.net/a9fa/i/2015/302/f/6/fields_of_utopia_2_4k_center_by_starkiteckt-d8ph3b1.png") no-repeat center;
     min-height: 15rem;
     background-attachment: fixed;
     background-size: cover;
-    margin-top: 4rem !important;
     height: 55vh;
 }
 
@@ -193,9 +196,9 @@ body, html {
     }
 }
 
-/*todo namestiti responsive*/
 .scroll-btn {
-    padding-top: 8rem !important;
+    position: absolute;
+    top:80%;
 }
 
 .scroll-btn > * {
@@ -594,6 +597,311 @@ body, html {
 
 /*TIMELINE*/
 
+/*TIMELINE MOBILE*/
+
+.hexa {
+    border: 0px;
+    float: left;
+    text-align: center;
+    height: 35px;
+    width: 60px;
+    font-size: 22px;
+    background: #f0f0f0;
+    color: #3c3c3c;
+    position: relative;
+    margin-top: 15px;
+}
+
+.hexa:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 15px solid #f0f0f0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    top: -15px;
+}
+
+.hexa:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-top: 15px solid #f0f0f0;
+    bottom: -15px;
+}
+
+.timelineMobile {
+    position: relative;
+    padding: 0;
+    width: 100%;
+    margin-top: 20px;
+    list-style-type: none;
+}
+
+.timelineMobile li {
+    padding: 2em 0;
+}
+
+.timelineMobile .hexa {
+    width: 16px;
+    height: 10px;
+    position: absolute;
+    background: #000000;
+    z-index: 5;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    top: -30px;
+    margin-top: 0;
+}
+
+.timelineMobile .hexa:before {
+    border-bottom: 4px solid #000000;
+    border-left-width: 8px;
+    border-right-width: 8px;
+    top: -4px;
+}
+
+.timelineMobile .hexa:after {
+    border-left-width: 8px;
+    border-right-width: 8px;
+    border-top: 4px solid #000000;
+    bottom: -4px;
+}
+
+.direction-l,
+.direction-r {
+    float: none;
+    width: 100%;
+    text-align: center;
+}
+
+.flag-wrapper {
+    text-align: center;
+    position: relative;
+}
+
+.flag {
+    position: relative;
+    display: inline;
+    background: rgb(255, 255, 255);
+    font-weight: 600;
+    z-index: 15;
+    padding: 6px 10px;
+    text-align: left;
+    border-radius: 5px;
+}
+
+.direction-l .flag:after,
+.direction-r .flag:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: -15px;
+    height: 0;
+    width: 0;
+    margin-left: -8px;
+    border: solid transparent;
+    border-bottom-color: rgb(255, 255, 255);
+    border-width: 8px;
+    pointer-events: none;
+}
+
+.direction-l .flag {
+    -webkit-box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.15);
+    box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.15);
+}
+
+.direction-r .flag {
+    -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.15);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.15);
+}
+
+.time-wrapper {
+    display: block;
+    position: relative;
+    margin: 4px 0 0 0;
+    z-index: 14;
+    line-height: 1em;
+    vertical-align: middle;
+    color: #fff;
+}
+
+.direction-l .time-wrapper {
+    float: none;
+}
+
+.direction-r .time-wrapper {
+    float: none;
+}
+
+.time {
+    background: #000000;
+    display: inline-block;
+    padding: 8px;
+}
+
+.desc {
+    position: relative;
+    margin: 1em 0 0 0;
+    padding: 1em;
+    background: rgb(254, 254, 254);
+    -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.20);
+    -moz-box-shadow: 0 0 1px rgba(0, 0, 0, 0.20);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.20);
+    z-index: 15;
+}
+
+.direction-l .desc,
+.direction-r .desc {
+    position: relative;
+    margin: 1em 1em 0 1em;
+    padding: 1em;
+    z-index: 15;
+}
+
+@media (min-width: 768px) {
+    .timelineMobile {
+        width: 660px;
+        margin: 0 auto;
+    }
+
+    .timelineMobile li:after {
+        content: "";
+        display: block;
+        height: 0;
+        clear: both;
+        visibility: hidden;
+    }
+
+    .timelineMobile .hexa {
+        left: -28px;
+        right: auto;
+        top: 8px;
+    }
+
+    .timelineMobile .direction-l .hexa {
+        left: auto;
+        right: -28px;
+    }
+
+    .direction-l {
+        position: relative;
+        width: 310px;
+        float: left;
+        text-align: right;
+    }
+
+    .direction-r {
+        position: relative;
+        width: 310px;
+        float: right;
+        text-align: left;
+    }
+
+    .flag-wrapper {
+        display: inline-block;
+    }
+
+    .flag {
+        font-size: 18px;
+    }
+
+    .direction-l .flag:after {
+        left: auto;
+        right: -16px;
+        top: 50%;
+        margin-top: -8px;
+        border: solid transparent;
+        border-left-color: rgb(254, 254, 254);
+        border-width: 8px;
+    }
+
+    .direction-r .flag:after {
+        top: 50%;
+        margin-top: -8px;
+        border: solid transparent;
+        border-right-color: rgb(254, 254, 254);
+        border-width: 8px;
+        left: -8px;
+    }
+
+    .time-wrapper {
+        display: inline;
+        vertical-align: middle;
+        margin: 0;
+    }
+
+    .direction-l .time-wrapper {
+        float: left;
+    }
+
+    .direction-r .time-wrapper {
+        float: right;
+    }
+
+    .time {
+        padding: 5px 10px;
+    }
+
+    .direction-r .desc {
+        margin: 1em 0 0 0.75em;
+    }
+}
+
+@media (min-width: 992px) {
+    .timelineMobile {
+        width: 800px;
+        margin: 0 auto;
+    }
+
+    .direction-l {
+        position: relative;
+        width: 380px;
+        float: left;
+        text-align: right;
+    }
+
+    .direction-r {
+        position: relative;
+        width: 380px;
+        float: right;
+        text-align: left;
+    }
+}
+
+.timelineMobileHeader {
+    padding-top: 3rem !important;
+}
+
+.timelineMobileHeader span {
+    font-family: 'Lobster', cursive;
+    font-size: 36px;
+    position: relative;
+    padding: 1rem;
+    letter-spacing: 2px;
+}
+
+.timelineMobileHeaderSecond span {
+    font-family: 'Lobster', cursive;
+    font-size: 36px;
+    position: relative;
+    padding: 1rem;
+    letter-spacing: 2px;
+}
+
+/*TIMELINE MOBILE*/
+
+
 /*FOOTER*/
 
 .footerIcons i {
@@ -804,4 +1112,14 @@ body, html {
 
 .noScroll{
     overflow: hidden;
+}
+
+/*MOBILE / TABLET*/
+
+.TabHeadMobile{
+    text-align: center;
+    margin-top: 2rem!important;
+    font-family: 'Lobster',
+    cursive;
+    letter-spacing: 2px;
 }
