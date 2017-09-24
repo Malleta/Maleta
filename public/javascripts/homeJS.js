@@ -103,10 +103,15 @@ app.controller('myCtrl',['$scope', '$http', function ($scope, $http) {
     });
 
 
+
+
     $scope.sendMail = function () {
-        $http.post('/sendMail', {}, {params: $scope.uMail})
-            .then(function (res) {
-            });
+        if( $('.ui.form').form('is valid')[0]){
+            $http.post('/sendMail', {}, {params: $scope.uMail})
+                .then(function (res) {
+                    console.log('poslato');
+                });
+        }
     };
 
 
@@ -121,5 +126,16 @@ app.controller('myCtrl',['$scope', '$http', function ($scope, $http) {
         $('body').removeClass('noScroll');
     }, 1500);
 
+//    FORM VALIDATION
+    $('.ui.form')
+        .form({
+            fields: {
+                uName     : 'empty',
+                uEmail   : 'email',
+                uSubject : 'empty',
+                uMessage : 'empty'
+            }
+        })
+    ;
 
 }]);

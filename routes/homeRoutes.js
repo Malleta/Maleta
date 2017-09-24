@@ -19,11 +19,12 @@ router.post('/sendMail', function(req, res) {
     });
 
     let mailOptions = {
-        from: `${req.query.uName} <${req.query.uEmail}>`, // sender address
+        from: req.query.uName, // sender address
         to: 'nmmaleta@gmail.com', // list of receivers
         subject: req.query.uSubject, // Subject line
-        text: req.query.uMessage, // plain text body
+        html: `${req.query.uMessage}<br><br> ${req.query.uEmail}<br> Sent from <b>Maleta</b>`
     };
+    console.log(mailOptions);
 
     transporter.sendMail(mailOptions, (error, info) => {
         if (error) {

@@ -1,10 +1,10 @@
 <!DOCTYPE html>
+<!--todo html ima top padding na mobile-->
 <html ng-app="myApp">
 
 <head>
     <title>Nikola Maletić</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <link rel="stylesheet" href="/stylesheets/semantic.min.css"/>
     <link rel="stylesheet" href="/stylesheets/glide.core.min.css"/>
     <link rel="stylesheet" href="/stylesheets/glide.theme.min.css"/>
@@ -640,7 +640,6 @@
 
 
 
-<!--todo form ispravnost-->
 <div class="computer only ui grid twelve wide column footer">
     <div class="sixteen wide column"><h1 class="TabHead">Kontaktirajte me</h1></div>
     <div class="two wide column"></div>
@@ -650,23 +649,25 @@
             <div class="two fields">
                 <div class="field">
                     <label>Ime</label>
-                    <input type="text" ng-model="uMail.uName" placeholder="Ime">
+                    <input type="text" name="uName" ng-model="uMail.uName" placeholder="Ime">
                 </div>
                 <div class="field">
                     <label>Email</label>
-                    <input type="text" ng-model="uMail.uEmail" placeholder="Email">
+                    <input type="text" name="uEmail" ng-model="uMail.uEmail" placeholder="Email">
                 </div>
             </div>
 
             <div class="field">
                 <label>Naslov</label>
-                <input type="text" ng-model="uMail.uSubject" placeholder="Naslov / predmet">
+                <input type="text" name="uSubject" ng-model="uMail.uSubject" placeholder="Naslov / predmet">
             </div>
             <div class="field">
                 <label>Poruka</label>
-                <textarea ng-model="uMail.uMessage" placeholder="Poruka"></textarea>
+                <textarea name="uMessage" ng-model="uMail.uMessage" placeholder="Poruka"></textarea>
             </div>
-            <button ng-click="sendMail()" class="ui button black" type="submit">Pošalji</button>
+            <div class="ui center aligned grid">
+            <button ng-click="sendMail()" class="ui button black four wide column" type="submit">Pošalji</button>
+            </div>
         </form>
     </div>
     <div class="two wide column"></div>
