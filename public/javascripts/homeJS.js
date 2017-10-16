@@ -64,34 +64,34 @@ app.controller('myCtrl',['$scope', '$http', function ($scope, $http) {
     });
 
 
-    $('#pHTML').progress({
+    $('.pHTML').progress({
         percent: 89
     });
-    $('#pCSS').progress({
+    $('.pCSS').progress({
         percent: 81
     });
-    $('#pJS').progress({
+    $('.pJS').progress({
         percent: 73
     });
-    $('#pAngular').progress({
+    $('.pAngular').progress({
         percent: 78
     });
-    $('#pPHP').progress({
+    $('.pPHP').progress({
         percent: 42
     });
-    $('#pC').progress({
+    $('.pC').progress({
         percent: 39
     });
-    $('#pNode').progress({
+    $('.pNode').progress({
         percent: 71
     });
-    $('#pMySQL').progress({
+    $('.pMySQL').progress({
         percent: 82
     });
-    $('#pPhotoShop').progress({
+    $('.pPhotoShop').progress({
         percent: 76
     });
-    $('#pIllustrator').progress({
+    $('.pIllustrator').progress({
         percent: 49
     });
 
@@ -116,10 +116,9 @@ app.controller('myCtrl',['$scope', '$http', function ($scope, $http) {
 
 
     //SLIDER
-    $("#Glide").glide({
-        type: "carousel",
-        autoplay: false
-    });
+
+
+
     // LOADER
     setTimeout(function () {
         $(".overlay").fadeOut(1200);
