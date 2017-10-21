@@ -134,7 +134,20 @@ app.controller('myCtrl',['$scope', '$http', function ($scope, $http) {
                 uSubject : 'empty',
                 uMessage : 'empty'
             }
-        })
-    ;
+        });
+
+    $('.navibarProgress')
+        .progress({
+            total: $(document).height()
+        });
+
+    $(window).scroll(function () {
+        $('.navibarProgress').progress('set progress', $(document).scrollTop() + $(window).height());
+
+        if($(window).scrollTop() + $(window).height() === $(document).height()){
+            $('.navibarProgress').progress('set progress', $(document).height());
+        }
+    });
+
 
 }]);

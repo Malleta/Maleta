@@ -31,15 +31,23 @@
 
 <div ng-hide="false" class="ui fixed inverted menu">
     <div class="ui container">
-        <a href="#" class="header item">
+        <a class="header item">
             NM
         </a>
-        <a href="#" class="item">Početna</a>
-        <a href="#" class="item">O meni</a>
-        <a href="#" class="item">Znanje</a>
-        <a href="#" class="item">Vremenska linija</a>
-        <a href="#" class="item">Nekoliko lepih reči</a>
-        <a href="#" class="item">Kontakt</a>
+        <!--todo Sirina progress bara mora da bude responsivna, trenunto je fiksirana na 70rem-a.-->
+        <div class="ui middle aligned grid item">
+            <div class="ui grid inverted indicating progress active navibarProgress">
+                <div class="bar colorRed">
+                    <div class="progress"></div>
+                </div>
+            </div>
+        </div>
+        <!--<a href="#" class="item">Početna</a>-->
+        <!--<a href="#" class="item">O meni</a>-->
+        <!--<a href="#" class="item">Znanje</a>-->
+        <!--<a href="#" class="item">Vremenska linija</a>-->
+        <!--<a href="#" class="item">Nekoliko lepih reči</a>-->
+        <!--<a href="#" class="item">Kontakt</a>-->
     </div>
 </div>
 
@@ -756,7 +764,7 @@
 
 <div class="ui grid sixteen wide column center aligned greyBackground">
     <div style="padding: 2rem" class="ten wide column">
-        <p>© Copyright 2017 : Nikola Maletić. All Rights Reserved.</p>
+        <p>© Copyright 2017 : Nikola Maletić. All Rights Reserved.</p><img style="width: 35px; height: 35px" src="favicon.ico">
     </div>
 </div>
 

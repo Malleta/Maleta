@@ -1906,3 +1906,11 @@ body, html {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     overflow: hidden;
 }
+
+.navibarProgress{
+    width: 70rem;
+}
+
+.colorRed{
+    background-color: rgb(158, 16, 13)!important;
+}
