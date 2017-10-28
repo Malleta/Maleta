@@ -705,9 +705,21 @@
                 <textarea name="uMessage" ng-model="uMail.uMessage" placeholder="Poruka"></textarea>
             </div>
             <div class="ui center aligned grid">
-                <button ng-click="sendMail()" class="ui button black four wide column" type="submit">Pošalji</button>
+                <button class="ui button black four wide column" type="submit">Pošalji</button>
             </div>
         </form>
+
+        <div class="ui inverted dimmer">
+            <div class="content">
+                <div class="center">
+                    <h2 class="ui black icon header">
+                        <i class="mail icon"></i>
+                        Poruka je uspešno poslata!
+                    </h2>
+                </div>
+            </div>
+        </div>
+
     </div>
     <div class="two wide column"></div>
 
@@ -750,11 +762,61 @@
                 <label>Poruka</label>
                 <textarea ng-model="uMail.uMessage" placeholder="Poruka"></textarea>
             </div>
-            <button ng-click="sendMail()" class="ui button black fluid" type="submit">Pošalji</button>
+            <button class="ui button black fluid" type="submit">Pošalji</button>
         </form>
+        <div class="ui active dimmer">
+            <div class="content">
+                <div class="center">
+                    <h2 class="ui inverted icon header">
+                        <i class="heart icon"></i>
+                        Dimmed Message!
+                    </h2>
+                </div>
+            </div>
+        </div>
     </div>
 
 </div>
+
+<div class="ui tiny modal">
+    <div class="ui icon header">
+        <i class="mail icon"></i>
+        Da li je sve u redu?
+    </div>
+    <div class="content">
+        <form class="ui form">
+            <div class="two fields">
+                <div class="field">
+                    <label>Ime</label>
+                    <input readonly="" type="text" ng-model="uMail.uName" placeholder="Ime">
+                </div>
+                <div class="field">
+                    <label>Email</label>
+                    <input readonly="" type="text" ng-model="uMail.uEmail" placeholder="Email">
+                </div>
+            </div>
+
+            <div class="field">
+                <label>Naslov</label>
+                <input readonly="" type="text" ng-model="uMail.uSubject" placeholder="Naslov / predmet">
+            </div>
+            <div class="field">
+                <label>Poruka</label>
+                <textarea readonly="" ng-model="uMail.uMessage" placeholder="Poruka"></textarea>
+            </div>
+    </div>
+    <div class="actions">
+        <div class="ui negative button">
+            <i class="remove icon"></i>
+            Ne
+        </div>
+        <div ng-click="sendMail()" class="ui positive right labeled icon button">
+            <i class="checkmark icon"></i>
+            Da! Pošalji.
+        </div>
+    </div>
+</div>
+
 
 <!-- Return to Top -->
 <div class="computer only backtotop inverted">

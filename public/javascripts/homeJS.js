@@ -109,7 +109,7 @@ app.controller('myCtrl',['$scope', '$http', function ($scope, $http) {
         if( $('.ui.form').form('is valid')[0]){
             $http.post('/sendMail', {}, {params: $scope.uMail})
                 .then(function (res) {
-                    console.log('poslato');
+                    $('.ui.inverted.dimmer').dimmer('show');
                 });
         }
     };
@@ -146,6 +146,15 @@ app.controller('myCtrl',['$scope', '$http', function ($scope, $http) {
 
         if($(window).scrollTop() + $(window).height() === $(document).height()){
             $('.navibarProgress').progress('set progress', $(document).height());
+        }
+    });
+
+    $('.ui.button.black').click(function () {
+        if( $('.ui.form').form('is valid')[0]){
+
+            $('.ui.modal')
+                .modal('show');
+
         }
     });
 
