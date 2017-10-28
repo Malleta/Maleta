@@ -79,7 +79,7 @@ body, html {
 }
 
 .infoHead {
-    margin:0 !important;
+    margin: 0 !important;
     font-style: italic;
     font-size: 16px;
 }
@@ -121,7 +121,7 @@ body, html {
     margin-top: 4rem !important;
 }
 
-.fiveSecond{
+.fiveSecond {
     background: url("https://img05.deviantart.net/a9fa/i/2015/302/f/6/fields_of_utopia_2_4k_center_by_starkiteckt-d8ph3b1.png") no-repeat center;
     min-height: 15rem;
     background-attachment: fixed;
@@ -200,7 +200,7 @@ body, html {
 
 .scroll-btn {
     position: absolute;
-    top:80%;
+    top: 80%;
 }
 
 .scroll-btn > * {
@@ -903,7 +903,6 @@ body, html {
 
 /*TIMELINE MOBILE*/
 
-
 /*FOOTER*/
 
 .footerIcons i {
@@ -937,8 +936,7 @@ body, html {
 .backtotop,
 .backtotop::after,
 .backtotop::before,
-.backtotop .backtotop-morph
-{
+.backtotop .backtotop-morph {
     transition: all 250ms ease-in-out 0s;
 }
 
@@ -955,6 +953,7 @@ body, html {
     transform-origin: center center 0;
     z-index: 1000;
 }
+
 .backtotop::before {
     width: 18px;
     height: 4px;
@@ -967,6 +966,7 @@ body, html {
     transform: rotate(-45deg) translateY(-50%);
     transform-origin: center top 0;
 }
+
 .backtotop::after {
     width: 25px;
     height: 4px;
@@ -994,6 +994,7 @@ body, html {
     margin-bottom: -20px;
     transform: translate(-50%);
 }
+
 .backtotop .backtotop-morph::before {
     width: 0;
     height: 0;
@@ -1006,13 +1007,16 @@ body, html {
     border-width: 6px 10px 6px 0;
     content: "";
 }
+
 .backtotop:hover {
     transform: rotate(90deg);
 }
+
 .backtotop:hover .backtotop-morph {
     left: 40%;
     opacity: 1;
 }
+
 .backtotop:hover::before {
     width: 30px;
     left: 10px;
@@ -1021,6 +1025,7 @@ body, html {
     background-color: black;
     transform: rotate(0deg) translateY(-8px);
 }
+
 .backtotop:hover::after {
     width: 30px;
     right: 10px;
@@ -1029,6 +1034,7 @@ body, html {
     background-color: black;
     transform: rotate(0deg) translateY(8px);
 }
+
 /*loade*/
 
 #loader {
@@ -1039,6 +1045,7 @@ body, html {
     top: 50%;
     width: 90px;
 }
+
 #loader ul {
     margin: 0;
     list-style: none;
@@ -1047,6 +1054,7 @@ body, html {
     padding: 0;
     height: 10px;
 }
+
 #loader ul li {
     position: absolute;
     width: 2px;
@@ -1054,6 +1062,7 @@ body, html {
     background-color: #fff;
     bottom: 0;
 }
+
 @keyframes sequence1 {
     0% {
         height: 10px;
@@ -1065,6 +1074,7 @@ body, html {
         height: 10px;
     }
 }
+
 @keyframes sequence2 {
     0% {
         height: 20px;
@@ -1076,26 +1086,32 @@ body, html {
         height: 20px;
     }
 }
+
 #loader li:nth-child(1) {
     left: 0;
     animation: sequence1 1s ease infinite;
 }
+
 #loader li:nth-child(2) {
     left: 15px;
     animation: sequence2 1s ease infinite 0.1s;
 }
+
 #loader li:nth-child(3) {
     left: 30px;
     animation: sequence1 1s ease-in-out infinite 0.2s;
 }
+
 #loader li:nth-child(4) {
     left: 45px;
     animation: sequence2 1s ease-in infinite 0.3s;
 }
+
 #loader li:nth-child(5) {
     left: 60px;
     animation: sequence1 1s ease-in-out infinite 0.4s;
 }
+
 #loader li:nth-child(6) {
     left: 75px;
     animation: sequence2 1s ease infinite 0.5s;
@@ -1104,25 +1120,25 @@ body, html {
 .overlay {
     width: 100%;
     height: 100%;
-    position:fixed;
-    top:0;
-    bottom:0;
-    left:0;
-    right:0;
-    background-color:#000 !important;
-    opacity:1;
-    z-index:1001;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #000 !important;
+    opacity: 1;
+    z-index: 1001;
 }
 
-.noScroll{
+.noScroll {
     overflow: hidden;
 }
 
 /*MOBILE / TABLET*/
 
-.TabHeadMobile{
+.TabHeadMobile {
     text-align: center;
-    margin-top: 2rem!important;
+    margin-top: 2rem !important;
     font-family: 'Lobster',
     cursive;
     letter-spacing: 2px;
@@ -1168,6 +1184,7 @@ body, html {
     /* Base functionality */
     /* Autohide Prev/Next Navigation */
 }
+
 [data-am-fadeshow] .fs-slide {
     position: absolute;
     top: 15%;
@@ -1182,9 +1199,11 @@ body, html {
     transition: opacity 1s ease;
     /* Display first child on load */
 }
+
 [data-am-fadeshow] .fs-slide:first-child {
     opacity: 1;
 }
+
 [data-am-fadeshow] .fs-quick-nav {
     position: absolute;
     bottom: 15px;
@@ -1197,6 +1216,7 @@ body, html {
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
 }
+
 [data-am-fadeshow] .fs-quick-btn {
     display: inline-block;
     width: 15px;
@@ -1209,12 +1229,15 @@ body, html {
     background-color: rgba(255, 255, 255, 0.8);
     /* Set active state to first button on load */
 }
+
 [data-am-fadeshow] .fs-quick-btn:hover {
     opacity: 0.8;
 }
+
 [data-am-fadeshow] .fs-quick-btn:first-child {
     background-color: coral;
 }
+
 [data-am-fadeshow] .fs-prev-btn, [data-am-fadeshow] .fs-next-btn {
     position: absolute;
     display: none;
@@ -1228,202 +1251,248 @@ body, html {
     -webkit-transition: all 200ms ease;
     transition: all 200ms ease;
 }
+
 @media (max-width: 500px) {
     [data-am-fadeshow] .fs-prev-btn, [data-am-fadeshow] .fs-next-btn {
         width: 50%;
     }
 }
+
 [data-am-fadeshow] .fs-prev-btn:before, [data-am-fadeshow] .fs-next-btn:before {
     position: absolute;
     top: 50%;
     font-size: 3vw;
     color: rgba(255, 255, 255, 0.5);
 }
+
 [data-am-fadeshow] .fs-prev-btn:hover, [data-am-fadeshow] .fs-next-btn:hover {
     background-color: rgba(255, 255, 255, 0.1);
 }
+
 @media (max-width: 500px) {
     [data-am-fadeshow] .fs-prev-btn:hover, [data-am-fadeshow] .fs-next-btn:hover {
         background-color: rgba(255, 255, 255, 0);
     }
 }
+
 [data-am-fadeshow] .fs-prev-btn {
     left: 0;
     -webkit-transform: translateX(-100%);
     transform: translateX(-100%);
 }
+
 [data-am-fadeshow] .fs-prev-btn:before {
     content: "❮";
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
+
 @media (max-width: 500px) {
     [data-am-fadeshow] .fs-prev-btn:before {
         left: 30px;
     }
 }
+
 @media (max-width: 500px) {
     [data-am-fadeshow] .fs-prev-btn {
         -webkit-transform: translate(0);
         transform: translate(0);
     }
 }
+
 [data-am-fadeshow] .fs-next-btn {
     right: 0;
     -webkit-transform: translateX(100%);
     transform: translateX(100%);
 }
+
 [data-am-fadeshow] .fs-next-btn:before {
     content: "❯";
     right: 50%;
     -webkit-transform: translate(50%, -50%);
     transform: translate(50%, -50%);
 }
+
 @media (max-width: 500px) {
     [data-am-fadeshow] .fs-next-btn:before {
         right: 30px;
     }
 }
+
 @media (max-width: 500px) {
     [data-am-fadeshow] .fs-next-btn {
         -webkit-transform: translate(0);
         transform: translate(0);
     }
 }
+
 [data-am-fadeshow] input[type="radio"] {
     position: fixed;
     top: -9999px;
 }
+
 [data-am-fadeshow] input[type="radio"]:checked {
     /* This loop handles the slide switching and quick navigation active state */
     /* Hide navigation if only one slide */
 }
+
 [data-am-fadeshow] input[type="radio"]:checked:nth-of-type(5) {
     /* Show slide */
     /* Add active state to dot */
 }
+
 [data-am-fadeshow] input[type="radio"]:checked:nth-of-type(5) ~ .fs-slides .fs-slide {
     opacity: 0;
     -webkit-animation: none !important;
     animation: none !important;
 }
+
 [data-am-fadeshow] input[type="radio"]:checked:nth-of-type(5) ~ .fs-slides .fs-slide:nth-child(5) {
     opacity: 1;
 }
+
 [data-am-fadeshow] input[type="radio"]:checked:nth-of-type(5) ~ .fs-quick-nav .fs-quick-btn {
     background-color: rgba(255, 255, 255, 0.8);
     /* Cancel autoplay */
     -webkit-animation: none !important;
     animation: none !important;
 }
+
 [data-am-fadeshow] input[type="radio"]:checked:nth-of-type(5) ~ .fs-quick-nav .fs-quick-btn:nth-child(5) {
     background-color: coral;
 }
+
 [data-am-fadeshow] input[type="radio"]:checked:nth-of-type(5) ~ .fs-quick-nav .fs-quick-btn:nth-child(5):hover {
     opacity: 1;
 }
+
 [data-am-fadeshow] input[type="radio"]:checked:nth-of-type(4) {
     /* Show slide */
     /* Add active state to dot */
 }
+
 [data-am-fadeshow] input[type="radio"]:checked:nth-of-type(4) ~ .fs-slides .fs-slide {
     opacity: 0;
     -webkit-animation: none !important;
     animation: none !important;
 }
+
 [data-am-fadeshow] input[type="radio"]:checked:nth-of-type(4) ~ .fs-slides .fs-slide:nth-child(4) {
     opacity: 1;
 }
+
 [data-am-fadeshow] input[type="radio"]:checked:nth-of-type(4) ~ .fs-quick-nav .fs-quick-btn {
     background-color: rgba(255, 255, 255, 0.8);
     /* Cancel autoplay */
     -webkit-animation: none !important;
     animation: none !important;
 }
+
 [data-am-fadeshow] input[type="radio"]:checked:nth-of-type(4) ~ .fs-quick-nav .fs-quick-btn:nth-child(4) {
     background-color: coral;
 }
+
 [data-am-fadeshow] input[type="radio"]:checked:nth-of-type(4) ~ .fs-quick-nav .fs-quick-btn:nth-child(4):hover {
     opacity: 1;
 }
+
 [data-am-fadeshow] input[type="radio"]:checked:nth-of-type(3) {
     /* Show slide */
     /* Add active state to dot */
 }
+
 [data-am-fadeshow] input[type="radio"]:checked:nth-of-type(3) ~ .fs-slides .fs-slide {
     opacity: 0;
     -webkit-animation: none !important;
     animation: none !important;
 }
+
 [data-am-fadeshow] input[type="radio"]:checked:nth-of-type(3) ~ .fs-slides .fs-slide:nth-child(3) {
     opacity: 1;
 }
+
 [data-am-fadeshow] input[type="radio"]:checked:nth-of-type(3) ~ .fs-quick-nav .fs-quick-btn {
     background-color: rgba(255, 255, 255, 0.8);
     /* Cancel autoplay */
     -webkit-animation: none !important;
     animation: none !important;
 }
+
 [data-am-fadeshow] input[type="radio"]:checked:nth-of-type(3) ~ .fs-quick-nav .fs-quick-btn:nth-child(3) {
     background-color: coral;
 }
+
 [data-am-fadeshow] input[type="radio"]:checked:nth-of-type(3) ~ .fs-quick-nav .fs-quick-btn:nth-child(3):hover {
     opacity: 1;
 }
+
 [data-am-fadeshow] input[type="radio"]:checked:nth-of-type(2) {
     /* Show slide */
     /* Add active state to dot */
 }
+
 [data-am-fadeshow] input[type="radio"]:checked:nth-of-type(2) ~ .fs-slides .fs-slide {
     opacity: 0;
     -webkit-animation: none !important;
     animation: none !important;
 }
+
 [data-am-fadeshow] input[type="radio"]:checked:nth-of-type(2) ~ .fs-slides .fs-slide:nth-child(2) {
     opacity: 1;
 }
+
 [data-am-fadeshow] input[type="radio"]:checked:nth-of-type(2) ~ .fs-quick-nav .fs-quick-btn {
     background-color: rgba(255, 255, 255, 0.8);
     /* Cancel autoplay */
     -webkit-animation: none !important;
     animation: none !important;
 }
+
 [data-am-fadeshow] input[type="radio"]:checked:nth-of-type(2) ~ .fs-quick-nav .fs-quick-btn:nth-child(2) {
     background-color: coral;
 }
+
 [data-am-fadeshow] input[type="radio"]:checked:nth-of-type(2) ~ .fs-quick-nav .fs-quick-btn:nth-child(2):hover {
     opacity: 1;
 }
+
 [data-am-fadeshow] input[type="radio"]:checked:nth-of-type(1) {
     /* Show slide */
     /* Add active state to dot */
 }
+
 [data-am-fadeshow] input[type="radio"]:checked:nth-of-type(1) ~ .fs-slides .fs-slide {
     opacity: 0;
     -webkit-animation: none !important;
     animation: none !important;
 }
+
 [data-am-fadeshow] input[type="radio"]:checked:nth-of-type(1) ~ .fs-slides .fs-slide:nth-child(1) {
     opacity: 1;
 }
+
 [data-am-fadeshow] input[type="radio"]:checked:nth-of-type(1) ~ .fs-quick-nav .fs-quick-btn {
     background-color: rgba(255, 255, 255, 0.8);
     /* Cancel autoplay */
     -webkit-animation: none !important;
     animation: none !important;
 }
+
 [data-am-fadeshow] input[type="radio"]:checked:nth-of-type(1) ~ .fs-quick-nav .fs-quick-btn:nth-child(1) {
     background-color: coral;
 }
+
 [data-am-fadeshow] input[type="radio"]:checked:nth-of-type(1) ~ .fs-quick-nav .fs-quick-btn:nth-child(1):hover {
     opacity: 1;
 }
+
 [data-am-fadeshow] input[type="radio"]:checked:first-of-type:last-of-type ~ .fs-quick-nav,
 [data-am-fadeshow] input[type="radio"]:checked:first-of-type:last-of-type ~ .fs-prev-nav,
 [data-am-fadeshow] input[type="radio"]:checked:first-of-type:last-of-type ~ .fs-next-nav {
     display: none !important;
 }
+
 [data-am-fadeshow]:hover .fs-prev-btn,
 [data-am-fadeshow]:hover .fs-next-btn {
     -webkit-transform: translateX(0);
@@ -1439,117 +1508,150 @@ body, html {
 [data-am-fadeshow~="next-prev-navigation"] {
     /* Display first pair of Prev/Next Buttons on load */
 }
+
 [data-am-fadeshow~="next-prev-navigation"] input[type="radio"]:checked:nth-of-type(5) {
     /* Show previous button */
     /* Show next button */
     /* Show last prev button if first slide */
     /* Show first next button if last slide */
 }
+
 [data-am-fadeshow~="next-prev-navigation"] input[type="radio"]:checked:nth-of-type(5) ~ .fs-prev-nav .fs-prev-btn {
     display: none;
 }
+
 [data-am-fadeshow~="next-prev-navigation"] input[type="radio"]:checked:nth-of-type(5) ~ .fs-prev-nav .fs-prev-btn:nth-child(4) {
     display: block;
 }
+
 [data-am-fadeshow~="next-prev-navigation"] input[type="radio"]:checked:nth-of-type(5):first-of-type ~ .fs-prev-nav .fs-prev-btn:last-child {
     display: block;
 }
+
 [data-am-fadeshow~="next-prev-navigation"] input[type="radio"]:checked:nth-of-type(5):last-of-type ~ .fs-next-nav .fs-next-btn:first-child {
     display: block;
 }
+
 [data-am-fadeshow~="next-prev-navigation"] input[type="radio"]:checked:nth-of-type(4) {
     /* Show previous button */
     /* Show next button */
     /* Show last prev button if first slide */
     /* Show first next button if last slide */
 }
+
 [data-am-fadeshow~="next-prev-navigation"] input[type="radio"]:checked:nth-of-type(4) ~ .fs-prev-nav .fs-prev-btn {
     display: none;
 }
+
 [data-am-fadeshow~="next-prev-navigation"] input[type="radio"]:checked:nth-of-type(4) ~ .fs-prev-nav .fs-prev-btn:nth-child(3) {
     display: block;
 }
+
 [data-am-fadeshow~="next-prev-navigation"] input[type="radio"]:checked:nth-of-type(4) ~ .fs-next-nav .fs-next-btn {
     display: none;
 }
+
 [data-am-fadeshow~="next-prev-navigation"] input[type="radio"]:checked:nth-of-type(4) ~ .fs-next-nav .fs-next-btn:nth-child(5) {
     display: block;
 }
+
 [data-am-fadeshow~="next-prev-navigation"] input[type="radio"]:checked:nth-of-type(4):first-of-type ~ .fs-prev-nav .fs-prev-btn:last-child {
     display: block;
 }
+
 [data-am-fadeshow~="next-prev-navigation"] input[type="radio"]:checked:nth-of-type(4):last-of-type ~ .fs-next-nav .fs-next-btn:first-child {
     display: block;
 }
+
 [data-am-fadeshow~="next-prev-navigation"] input[type="radio"]:checked:nth-of-type(3) {
     /* Show previous button */
     /* Show next button */
     /* Show last prev button if first slide */
     /* Show first next button if last slide */
 }
+
 [data-am-fadeshow~="next-prev-navigation"] input[type="radio"]:checked:nth-of-type(3) ~ .fs-prev-nav .fs-prev-btn {
     display: none;
 }
+
 [data-am-fadeshow~="next-prev-navigation"] input[type="radio"]:checked:nth-of-type(3) ~ .fs-prev-nav .fs-prev-btn:nth-child(2) {
     display: block;
 }
+
 [data-am-fadeshow~="next-prev-navigation"] input[type="radio"]:checked:nth-of-type(3) ~ .fs-next-nav .fs-next-btn {
     display: none;
 }
+
 [data-am-fadeshow~="next-prev-navigation"] input[type="radio"]:checked:nth-of-type(3) ~ .fs-next-nav .fs-next-btn:nth-child(4) {
     display: block;
 }
+
 [data-am-fadeshow~="next-prev-navigation"] input[type="radio"]:checked:nth-of-type(3):first-of-type ~ .fs-prev-nav .fs-prev-btn:last-child {
     display: block;
 }
+
 [data-am-fadeshow~="next-prev-navigation"] input[type="radio"]:checked:nth-of-type(3):last-of-type ~ .fs-next-nav .fs-next-btn:first-child {
     display: block;
 }
+
 [data-am-fadeshow~="next-prev-navigation"] input[type="radio"]:checked:nth-of-type(2) {
     /* Show previous button */
     /* Show next button */
     /* Show last prev button if first slide */
     /* Show first next button if last slide */
 }
+
 [data-am-fadeshow~="next-prev-navigation"] input[type="radio"]:checked:nth-of-type(2) ~ .fs-prev-nav .fs-prev-btn {
     display: none;
 }
+
 [data-am-fadeshow~="next-prev-navigation"] input[type="radio"]:checked:nth-of-type(2) ~ .fs-prev-nav .fs-prev-btn:nth-child(1) {
     display: block;
 }
+
 [data-am-fadeshow~="next-prev-navigation"] input[type="radio"]:checked:nth-of-type(2) ~ .fs-next-nav .fs-next-btn {
     display: none;
 }
+
 [data-am-fadeshow~="next-prev-navigation"] input[type="radio"]:checked:nth-of-type(2) ~ .fs-next-nav .fs-next-btn:nth-child(3) {
     display: block;
 }
+
 [data-am-fadeshow~="next-prev-navigation"] input[type="radio"]:checked:nth-of-type(2):first-of-type ~ .fs-prev-nav .fs-prev-btn:last-child {
     display: block;
 }
+
 [data-am-fadeshow~="next-prev-navigation"] input[type="radio"]:checked:nth-of-type(2):last-of-type ~ .fs-next-nav .fs-next-btn:first-child {
     display: block;
 }
+
 [data-am-fadeshow~="next-prev-navigation"] input[type="radio"]:checked:nth-of-type(1) {
     /* Show previous button */
     /* Show next button */
     /* Show last prev button if first slide */
     /* Show first next button if last slide */
 }
+
 [data-am-fadeshow~="next-prev-navigation"] input[type="radio"]:checked:nth-of-type(1) ~ .fs-next-nav .fs-next-btn {
     display: none;
 }
+
 [data-am-fadeshow~="next-prev-navigation"] input[type="radio"]:checked:nth-of-type(1) ~ .fs-next-nav .fs-next-btn:nth-child(2) {
     display: block;
 }
+
 [data-am-fadeshow~="next-prev-navigation"] input[type="radio"]:checked:nth-of-type(1):first-of-type ~ .fs-prev-nav .fs-prev-btn:last-child {
     display: block;
 }
+
 [data-am-fadeshow~="next-prev-navigation"] input[type="radio"]:checked:nth-of-type(1):last-of-type ~ .fs-next-nav .fs-next-btn:first-child {
     display: block;
 }
+
 [data-am-fadeshow~="next-prev-navigation"] .fs-prev-btn:last-child {
     display: block;
 }
+
 [data-am-fadeshow~="next-prev-navigation"] .fs-next-btn:nth-child(2) {
     display: block;
 }
@@ -1574,6 +1676,7 @@ body, html {
         background-color: rgba(255, 255, 255, 0.8);
     }
 }
+
 @-webkit-keyframes quickNavAnimation-5 {
     0% {
         background-color: rgba(255, 255, 255, 0.8);
@@ -1587,6 +1690,7 @@ body, html {
         background-color: rgba(255, 255, 255, 0.8);
     }
 }
+
 @keyframes slidesAnimation-5 {
     0% {
         opacity: 0;
@@ -1600,6 +1704,7 @@ body, html {
         opacity: 0;
     }
 }
+
 @-webkit-keyframes slidesAnimation-5 {
     0% {
         opacity: 0;
@@ -1613,39 +1718,47 @@ body, html {
         opacity: 0;
     }
 }
+
 [data-am-fadeshow~="autoplay"] input[type="radio"]:nth-of-type(5):last-of-type {
     /* Slide animation */
     /* Quick navigation animation */
     /* Animation Delay */
 }
+
 [data-am-fadeshow~="autoplay"] input[type="radio"]:nth-of-type(5):last-of-type ~ .fs-slides .fs-slide {
     -webkit-animation: slidesAnimation-5 15s infinite;
     animation: slidesAnimation-5 15s infinite;
 }
+
 [data-am-fadeshow~="autoplay"] input[type="radio"]:nth-of-type(5):last-of-type ~ .fs-quick-nav .fs-quick-btn {
     -webkit-animation: quickNavAnimation-5 15s infinite;
     animation: quickNavAnimation-5 15s infinite;
 }
+
 [data-am-fadeshow~="autoplay"] input[type="radio"]:nth-of-type(5):last-of-type ~ .fs-slides .fs-slide:nth-child(1),
 [data-am-fadeshow~="autoplay"] input[type="radio"]:nth-of-type(5):last-of-type ~ .fs-quick-nav .fs-quick-btn:nth-child(1) {
     -webkit-animation-delay: -1s;
     animation-delay: -1s;
 }
+
 [data-am-fadeshow~="autoplay"] input[type="radio"]:nth-of-type(5):last-of-type ~ .fs-slides .fs-slide:nth-child(2),
 [data-am-fadeshow~="autoplay"] input[type="radio"]:nth-of-type(5):last-of-type ~ .fs-quick-nav .fs-quick-btn:nth-child(2) {
     -webkit-animation-delay: 2s;
     animation-delay: 2s;
 }
+
 [data-am-fadeshow~="autoplay"] input[type="radio"]:nth-of-type(5):last-of-type ~ .fs-slides .fs-slide:nth-child(3),
 [data-am-fadeshow~="autoplay"] input[type="radio"]:nth-of-type(5):last-of-type ~ .fs-quick-nav .fs-quick-btn:nth-child(3) {
     -webkit-animation-delay: 5s;
     animation-delay: 5s;
 }
+
 [data-am-fadeshow~="autoplay"] input[type="radio"]:nth-of-type(5):last-of-type ~ .fs-slides .fs-slide:nth-child(4),
 [data-am-fadeshow~="autoplay"] input[type="radio"]:nth-of-type(5):last-of-type ~ .fs-quick-nav .fs-quick-btn:nth-child(4) {
     -webkit-animation-delay: 8s;
     animation-delay: 8s;
 }
+
 [data-am-fadeshow~="autoplay"] input[type="radio"]:nth-of-type(5):last-of-type ~ .fs-slides .fs-slide:nth-child(5),
 [data-am-fadeshow~="autoplay"] input[type="radio"]:nth-of-type(5):last-of-type ~ .fs-quick-nav .fs-quick-btn:nth-child(5) {
     -webkit-animation-delay: 11s;
@@ -1665,6 +1778,7 @@ body, html {
         background-color: rgba(255, 255, 255, 0.8);
     }
 }
+
 @-webkit-keyframes quickNavAnimation-4 {
     0% {
         background-color: rgba(255, 255, 255, 0.8);
@@ -1678,6 +1792,7 @@ body, html {
         background-color: rgba(255, 255, 255, 0.8);
     }
 }
+
 @keyframes slidesAnimation-4 {
     0% {
         opacity: 0;
@@ -1691,6 +1806,7 @@ body, html {
         opacity: 0;
     }
 }
+
 @-webkit-keyframes slidesAnimation-4 {
     0% {
         opacity: 0;
@@ -1704,34 +1820,41 @@ body, html {
         opacity: 0;
     }
 }
+
 [data-am-fadeshow~="autoplay"] input[type="radio"]:nth-of-type(4):last-of-type {
     /* Slide animation */
     /* Quick navigation animation */
     /* Animation Delay */
 }
+
 [data-am-fadeshow~="autoplay"] input[type="radio"]:nth-of-type(4):last-of-type ~ .fs-slides .fs-slide {
     -webkit-animation: slidesAnimation-4 12s infinite;
     animation: slidesAnimation-4 12s infinite;
 }
+
 [data-am-fadeshow~="autoplay"] input[type="radio"]:nth-of-type(4):last-of-type ~ .fs-quick-nav .fs-quick-btn {
     -webkit-animation: quickNavAnimation-4 12s infinite;
     animation: quickNavAnimation-4 12s infinite;
 }
+
 [data-am-fadeshow~="autoplay"] input[type="radio"]:nth-of-type(4):last-of-type ~ .fs-slides .fs-slide:nth-child(1),
 [data-am-fadeshow~="autoplay"] input[type="radio"]:nth-of-type(4):last-of-type ~ .fs-quick-nav .fs-quick-btn:nth-child(1) {
     -webkit-animation-delay: -1s;
     animation-delay: -1s;
 }
+
 [data-am-fadeshow~="autoplay"] input[type="radio"]:nth-of-type(4):last-of-type ~ .fs-slides .fs-slide:nth-child(2),
 [data-am-fadeshow~="autoplay"] input[type="radio"]:nth-of-type(4):last-of-type ~ .fs-quick-nav .fs-quick-btn:nth-child(2) {
     -webkit-animation-delay: 2s;
     animation-delay: 2s;
 }
+
 [data-am-fadeshow~="autoplay"] input[type="radio"]:nth-of-type(4):last-of-type ~ .fs-slides .fs-slide:nth-child(3),
 [data-am-fadeshow~="autoplay"] input[type="radio"]:nth-of-type(4):last-of-type ~ .fs-quick-nav .fs-quick-btn:nth-child(3) {
     -webkit-animation-delay: 5s;
     animation-delay: 5s;
 }
+
 [data-am-fadeshow~="autoplay"] input[type="radio"]:nth-of-type(4):last-of-type ~ .fs-slides .fs-slide:nth-child(4),
 [data-am-fadeshow~="autoplay"] input[type="radio"]:nth-of-type(4):last-of-type ~ .fs-quick-nav .fs-quick-btn:nth-child(4) {
     -webkit-animation-delay: 8s;
@@ -1751,6 +1874,7 @@ body, html {
         background-color: rgba(255, 255, 255, 0.8);
     }
 }
+
 @-webkit-keyframes quickNavAnimation-3 {
     0% {
         background-color: rgba(255, 255, 255, 0.8);
@@ -1764,6 +1888,7 @@ body, html {
         background-color: rgba(255, 255, 255, 0.8);
     }
 }
+
 @keyframes slidesAnimation-3 {
     0% {
         opacity: 0;
@@ -1777,6 +1902,7 @@ body, html {
         opacity: 0;
     }
 }
+
 @-webkit-keyframes slidesAnimation-3 {
     0% {
         opacity: 0;
@@ -1790,29 +1916,35 @@ body, html {
         opacity: 0;
     }
 }
+
 [data-am-fadeshow~="autoplay"] input[type="radio"]:nth-of-type(3):last-of-type {
     /* Slide animation */
     /* Quick navigation animation */
     /* Animation Delay */
 }
+
 [data-am-fadeshow~="autoplay"] input[type="radio"]:nth-of-type(3):last-of-type ~ .fs-slides .fs-slide {
     -webkit-animation: slidesAnimation-3 9s infinite;
     animation: slidesAnimation-3 9s infinite;
 }
+
 [data-am-fadeshow~="autoplay"] input[type="radio"]:nth-of-type(3):last-of-type ~ .fs-quick-nav .fs-quick-btn {
     -webkit-animation: quickNavAnimation-3 9s infinite;
     animation: quickNavAnimation-3 9s infinite;
 }
+
 [data-am-fadeshow~="autoplay"] input[type="radio"]:nth-of-type(3):last-of-type ~ .fs-slides .fs-slide:nth-child(1),
 [data-am-fadeshow~="autoplay"] input[type="radio"]:nth-of-type(3):last-of-type ~ .fs-quick-nav .fs-quick-btn:nth-child(1) {
     -webkit-animation-delay: -1s;
     animation-delay: -1s;
 }
+
 [data-am-fadeshow~="autoplay"] input[type="radio"]:nth-of-type(3):last-of-type ~ .fs-slides .fs-slide:nth-child(2),
 [data-am-fadeshow~="autoplay"] input[type="radio"]:nth-of-type(3):last-of-type ~ .fs-quick-nav .fs-quick-btn:nth-child(2) {
     -webkit-animation-delay: 2s;
     animation-delay: 2s;
 }
+
 [data-am-fadeshow~="autoplay"] input[type="radio"]:nth-of-type(3):last-of-type ~ .fs-slides .fs-slide:nth-child(3),
 [data-am-fadeshow~="autoplay"] input[type="radio"]:nth-of-type(3):last-of-type ~ .fs-quick-nav .fs-quick-btn:nth-child(3) {
     -webkit-animation-delay: 5s;
@@ -1832,6 +1964,7 @@ body, html {
         background-color: rgba(255, 255, 255, 0.8);
     }
 }
+
 @-webkit-keyframes quickNavAnimation-2 {
     0% {
         background-color: rgba(255, 255, 255, 0.8);
@@ -1845,6 +1978,7 @@ body, html {
         background-color: rgba(255, 255, 255, 0.8);
     }
 }
+
 @keyframes slidesAnimation-2 {
     0% {
         opacity: 0;
@@ -1858,6 +1992,7 @@ body, html {
         opacity: 0;
     }
 }
+
 @-webkit-keyframes slidesAnimation-2 {
     0% {
         opacity: 0;
@@ -1871,24 +2006,29 @@ body, html {
         opacity: 0;
     }
 }
+
 [data-am-fadeshow~="autoplay"] input[type="radio"]:nth-of-type(2):last-of-type {
     /* Slide animation */
     /* Quick navigation animation */
     /* Animation Delay */
 }
+
 [data-am-fadeshow~="autoplay"] input[type="radio"]:nth-of-type(2):last-of-type ~ .fs-slides .fs-slide {
     -webkit-animation: slidesAnimation-2 6s infinite;
     animation: slidesAnimation-2 6s infinite;
 }
+
 [data-am-fadeshow~="autoplay"] input[type="radio"]:nth-of-type(2):last-of-type ~ .fs-quick-nav .fs-quick-btn {
     -webkit-animation: quickNavAnimation-2 6s infinite;
     animation: quickNavAnimation-2 6s infinite;
 }
+
 [data-am-fadeshow~="autoplay"] input[type="radio"]:nth-of-type(2):last-of-type ~ .fs-slides .fs-slide:nth-child(1),
 [data-am-fadeshow~="autoplay"] input[type="radio"]:nth-of-type(2):last-of-type ~ .fs-quick-nav .fs-quick-btn:nth-child(1) {
     -webkit-animation-delay: -1s;
     animation-delay: -1s;
 }
+
 [data-am-fadeshow~="autoplay"] input[type="radio"]:nth-of-type(2):last-of-type ~ .fs-slides .fs-slide:nth-child(2),
 [data-am-fadeshow~="autoplay"] input[type="radio"]:nth-of-type(2):last-of-type ~ .fs-quick-nav .fs-quick-btn:nth-child(2) {
     -webkit-animation-delay: 2s;
@@ -1896,6 +2036,20 @@ body, html {
 }
 
 /* Base Styling */
+
+.scrollbar {
+    margin-left: 30px;
+    float: left;
+    height: 300px;
+    width: 65px;
+    background: #F5F5F5;
+    overflow-y: scroll;
+    margin-bottom: 25px;
+}
+
+.force-overflow {
+    min-height: 450px;
+}
 
 .container {
     position: absolute;
@@ -1907,10 +2061,10 @@ body, html {
     overflow: hidden;
 }
 
-.navibarProgress{
+.navibarProgress {
     width: 70rem;
 }
 
-.colorRed{
-    background-color: rgb(158, 16, 13)!important;
+.colorRed {
+    background-color: rgb(158, 16, 13) !important;
 }
