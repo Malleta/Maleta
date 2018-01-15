@@ -12,6 +12,7 @@ router.get('/', function(req, res, next) {
 router.get('/getIP', function(req, res) {
     publicIP.v4().then(ip => {
         locationIP(ip, function (err, result) {
+            console.log(result);
             res.json(result);
         })
     });
