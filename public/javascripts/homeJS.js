@@ -159,6 +159,7 @@ app.controller('myCtrl', ['$scope', '$http', function ($scope, $http) {
     //get ip
     $http.get('/getIP')
         .then(function (res) {
+            console.log(res);
             $scope.location = res.data;
         });
 
