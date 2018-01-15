@@ -12,21 +12,22 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/components/icon.min.css"/>
     <link rel="stylesheet"
           href="/stylesheets/devicon.min.css"/>
+    <link rel="stylesheet" href="/stylesheets/themes/default/flag.min.css"/>
 </head>
 
 
 <body class="noScroll" ng-controller="myCtrl">
 <div class="overlay">
-    <div id="loader">
-        <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
-    </div>
+<div id="loader">
+<ul>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+</ul>
+</div>
 </div>
 
 <div ng-hide="false" class="ui fixed inverted menu">
@@ -36,13 +37,35 @@
         </a>
         <!--todo Sirina progress bara mora da bude responsivna, trenunto je fiksirana na 70rem-a.-->
         <div class="ui middle aligned grid item">
-            <div class="ui grid inverted indicating progress active navibarProgress">
+            <div class="ui grid tiny progress navibarProgress">
                 <div class="bar colorRed">
-                    <div class="progress"></div>
                 </div>
             </div>
         </div>
     </div>
+    <a class="item _location" style="cursor: pointer; left: 84.3rem;">
+        <div class="floating ui red label" style="font-size: .5em; top:1.1em; left:76%">!</div>
+        <i class="{{location.country_code.toLowerCase()}} flag"
+           style="background: transparent; padding:0; margin: 0"></i>
+    </a>
+    <div class="ui flowing popup top left transition" style="width: 23rem">
+        <div class="ui grid" style="padding: 0 2rem 2rem 2rem">
+            <div class="sixteen wide column">
+            <h2 class="ui large center aligned icon header" style="font-family: 'Lobster', cursive;">
+                <i class="circular world icon"></i>
+                {{location.country_name}}         <i class="{{location.country_code.toLowerCase()}} flag"
+                                  style="background: transparent; padding:0; margin: 0"></i>
+            </h2>
+            </div>
+            <div class="sixteen wide column">
+            <p>Automacki jezik prema Vašoj lokaciji.</p>
+                <h3 class="ui divider"></h3>
+                <p>I don't understand, translate to <i class="gb flag"
+                                                       style="background: transparent; padding:0; margin: 0"></i></p>
+            </div>
+        </div>
+    </div>
+
 </div>
 <!--Head-->
 <div id="first" class="computer only ui grid sixteen wide column center aligned">
@@ -99,7 +122,7 @@
         <div class="four wide column">
             <img class="ui medium circular image" src="images/profile.jpg" alt="Profile picture"/>
         </div>
-        <div class="eleven wide column">
+        <div class="ui eleven wide column">
             <p style="font-size: 18px; text-align: justify">
                 Najradije bih ostavio Lorem Ipsum na ovom mestu, ne volim da pričam o sebi, ali pošto je ovo moj
                 portfolio, evo nekoliko reči. Zainteresovanost sa računare je počela još od osnovne škole i od tada pa
@@ -110,7 +133,7 @@
                 to ne završim, koliko god vremena oduzimalo, sve dok mislim da je važno. Isto tako sam lako lenj za neke
                 stvari, ako rešenje može da se postigne preko računara / mašine, potrošiću ceo dan tražeći rešenje za
                 tako nešto, pre nego što ću to isto ručno uraditi za dva sata.. Ljubitelj sam Star Wars-a. Toliko od
-                mene, sve ostale stvari su dole.<br> Sve najbolje.
+                mene, sve ostale stvari su dole,<br>Sve najbolje.
             </p>
         </div>
     </div>
@@ -132,7 +155,7 @@
             to ne završim, koliko god vremena oduzimalo, sve dok mislim da je važno. Isto tako sam lako lenj za neke
             stvari, ako rešenje može da se postigne preko računara / mašine, potrošiću ceo dan tražeći rešenje za
             tako nešto, pre nego što ću to isto ručno uraditi za dva sata.. Ljubitelj sam Star Wars-a. Toliko od
-            mene, sve ostale stvari su dole.<br> Sve najbolje.
+            mene, sve ostale stvari su dole,<br>Sve najbolje.
         </p>
     </div>
 </div>
@@ -147,25 +170,31 @@
                 koji više ceni praktično
                 nego teorijsko znanje.
             </p>
-
-            <p class="infoHead">Puno ime:</p>
-            <p class="infoDetails">Nikola Maletić</p>
-
-            <p class="infoHead">Datum rođenja:</p>
-            <p class="infoDetails">20 Decembar</p>
-
-            <p class="infoHead">Student:</p>
-            <p class="infoDetails">Računarski fakultet</p>
-
-            <p class="infoHead">WebSite:</p>
-            <p class="infoDetails">www.maleta.rs</p>
-
-            <p class="infoHead">Skype:</p>
-            <p class="infoDetails">maleta96@gmail.com</p>
-
-            <p class="infoHead">Email:</p>
-            <p class="infoDetails" style="margin: 0">nmmaleta@gmail.com</p>
-            <p class="infoDetails" style="margin: 0">nikolamaletic@outlook.com</p>
+            <div class="ui segment">
+                <p class="infoHead">Puno ime:</p>
+                <p class="infoDetails">Nikola Maletić</p>
+            </div>
+            <div class="ui segment">
+                <p class="infoHead">Datum rođenja:</p>
+                <p class="infoDetails">20 Decembar</p>
+            </div>
+            <div class="ui segment">
+                <p class="infoHead">Student:</p>
+                <p class="infoDetails">Računarski fakultet</p>
+            </div>
+            <div class="ui segment">
+                <p class="infoHead">WebSite:</p>
+                <p class="infoDetails">https://maleta.herokuapp.com/</p>
+            </div>
+            <div class="ui segment">
+                <p class="infoHead">Skype:</p>
+                <p class="infoDetails">nmmaleta@gmail.com</p>
+            </div>
+            <div class="ui segment">
+                <p class="infoHead">Email:</p>
+                <p class="infoDetails" style="margin: 0">nmmaleta@gmail.com</p>
+                <p class="infoDetails" style="margin: 0">maleta96@gmail.com</p>
+            </div>
 
         </div>
         <div class="seven wide column">
@@ -175,6 +204,126 @@
                 Predstavljeno je u statusnom baru.<br>
                 Verujem da niko ne može objektivno sebe da prikaže, ovo je moj pokušaj.
             </p>
+            <div class="ui segment">
+                <div class="ui active progress pHTML" id="pHTML">
+                    <div class="bar">
+                        <div class="progress"></div>
+                    </div>
+                    <div class="label">HTML</div>
+                </div>
+                <div class="ui active progress pCSS">
+                    <div class="bar">
+                        <div class="progress"></div>
+                    </div>
+                    <div class="label">CSS3</div>
+                </div>
+                <div class="ui active progress pJS">
+                    <div class="bar">
+                        <div class="progress"></div>
+                    </div>
+                    <div class="label">JavaScrip</div>
+                </div>
+                <div class="ui active progress pAngular">
+                    <div class="bar">
+                        <div class="progress"></div>
+                    </div>
+                    <div class="label">AngularJS</div>
+                </div>
+                <div class="ui active progress pPHP">
+                    <div class="bar">
+                        <div class="progress"></div>
+                    </div>
+                    <div class="label left floated">PHP</div>
+                </div>
+                <div class="ui active progress pC">
+                    <div class="bar">
+                        <div class="progress"></div>
+                    </div>
+                    <div class="label left floated">C#</div>
+                </div>
+                <div class="ui active progress pNode">
+                    <div class="bar">
+                        <div class="progress"></div>
+                    </div>
+                    <div class="label">NodeJS</div>
+                </div>
+                <div class="ui active progress pMySQL">
+                    <div class="bar">
+                        <div class="progress"></div>
+                    </div>
+                    <div class="label left floated">MySQL</div>
+                </div>
+                <div class="ui active progress pPhotoShop">
+                    <div class="bar">
+                        <div class="progress"></div>
+                    </div>
+                    <div class="label left floated">PhotoShop</div>
+                </div>
+                <div class="ui active progress pIllustrator">
+                    <div class="bar">
+                        <div class="progress"></div>
+                    </div>
+                    <div class="label left floated">Illustrator</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sixteen wide column centered aligned">
+            <a href="https://drive.google.com/file/d/0B70TpMNWhWKoVUktU1lIM05mWGs/view?usp=sharing" target="_blank"
+               style="padding: 1rem 3rem 1rem 3rem" class="ui black icon button ">
+                <i class="download icon"></i>
+                Preuzmite CV
+            </a>
+        </div>
+    </div>
+
+</div>
+<!--Mobile/Tablet-->
+<div id="third" class="tablet only mobile only ui grid sixteen wide column centered aligned">
+
+    <div class="sixteen wide column">
+        <h2 style="font-family: 'Lobster', cursive;">Profil</h2>
+        <p style="font-size: 20px; text-align: justify">
+            21-godšnji Web developer iz Beograda
+            koji više ceni praktično
+            nego teorijsko znanje.
+        </p>
+
+        <div class="ui segment">
+            <p class="infoHead">Puno ime:</p>
+            <p class="infoDetails">Nikola Maletić</p>
+        </div>
+        <div class="ui segment">
+            <p class="infoHead">Datum rođenja:</p>
+            <p class="infoDetails">20 Decembar 1996</p>
+        </div>
+        <div class="ui segment">
+            <p class="infoHead">Student:</p>
+            <p class="infoDetails">Računarski fakultet</p>
+        </div>
+        <div class="ui segment">
+            <p class="infoHead">WebSite:</p>
+            <p class="infoDetails">https://maleta.herokuapp.com/</p>
+        </div>
+        <div class="ui segment">
+            <p class="infoHead">Skype:</p>
+            <p class="infoDetails">nmmaleta@gmail.com</p>
+        </div>
+        <div class="ui segment">
+            <p class="infoHead">Email:</p>
+            <p class="infoDetails" style="margin: 0">nmmaleta@gmail.com</p>
+            <p class="infoDetails" style="margin: 0">maleta96@gmail.com</p>
+        </div>
+    </div>
+
+    <div class="sixteen wide column">
+        <h2 style="font-family: 'Lobster', cursive;">Znanje</h2>
+        <p style="font-size: 20px; text-align: justify">
+            Znanje koje sam do sada stekao i koje se svakodnevno dopunjava.
+            Predstavljeno je u statusnom baru.<br>
+            Verujem da niko ne može objektivno sebe da prikaže, ovo je moj pokušaj.
+        </p>
+        <div class="ui segment">
             <div class="ui active progress pHTML" id="pHTML">
                 <div class="bar">
                     <div class="progress"></div>
@@ -197,7 +346,7 @@
                 <div class="bar">
                     <div class="progress"></div>
                 </div>
-                <div class="label">Angular</div>
+                <div class="label">AngularJS</div>
             </div>
             <div class="ui active progress pPHP">
                 <div class="bar">
@@ -209,7 +358,7 @@
                 <div class="bar">
                     <div class="progress"></div>
                 </div>
-                <div class="label left floated">C</div>
+                <div class="label left floated">C#</div>
             </div>
             <div class="ui active progress pNode">
                 <div class="bar">
@@ -235,116 +384,6 @@
                 </div>
                 <div class="label left floated">Illustrator</div>
             </div>
-        </div>
-
-        <div class="sixteen wide column centered aligned">
-            <a href="https://drive.google.com/file/d/0B70TpMNWhWKoVUktU1lIM05mWGs/view?usp=sharing" target="_blank"
-               style="padding: 1rem 3rem 1rem 3rem" class="ui black basic icon button ">
-                <i class="download icon"></i>
-                Preuzmite CV
-            </a>
-        </div>
-    </div>
-
-</div>
-<!--Mobile/Tablet-->
-<div id="third" class="tablet only mobile only ui grid sixteen wide column centered aligned">
-
-    <div class="sixteen wide column">
-        <h2 style="font-family: 'Lobster', cursive;">Profil</h2>
-        <p style="font-size: 20px; text-align: justify">
-            21-godšnji Web developer iz Beograda
-            koji više ceni praktično
-            nego teorijsko znanje.
-        </p>
-
-        <p class="infoHead">Puno ime:</p>
-        <p class="infoDetails">Nikola Maletić</p>
-
-        <p class="infoHead">Datum rođenja:</p>
-        <p class="infoDetails">20 Decembar</p>
-
-        <p class="infoHead">Student:</p>
-        <p class="infoDetails">Računarski fakultet</p>
-
-        <p class="infoHead">WebSite:</p>
-        <p class="infoDetails">www.maleta.rs</p>
-
-        <p class="infoHead">Skype:</p>
-        <p class="infoDetails">maleta96@gmail.com</p>
-
-        <p class="infoHead">Email:</p>
-        <p class="infoDetails" style="margin: 0">nmmaleta@gmail.com</p>
-        <p class="infoDetails" style="margin: 0">nikolamaletic@outlook.com</p>
-
-    </div>
-
-    <div class="sixteen wide column">
-        <h2 style="font-family: 'Lobster', cursive;">Znanje</h2>
-        <p style="font-size: 20px; text-align: justify">
-            Znanje koje sam do sada stekao i koje se svakodnevno dopunjava.
-            Predstavljeno je u statusnom baru.<br>
-            Verujem da niko ne može objektivno sebe da prikaže, ovo je moj pokušaj.
-        </p>
-        <div class="ui active progress pHTML" id="pHTML">
-            <div class="bar">
-                <div class="progress"></div>
-            </div>
-            <div class="label">HTML</div>
-        </div>
-        <div class="ui active progress pCSS">
-            <div class="bar">
-                <div class="progress"></div>
-            </div>
-            <div class="label">CSS3</div>
-        </div>
-        <div class="ui active progress pJS">
-            <div class="bar">
-                <div class="progress"></div>
-            </div>
-            <div class="label">JavaScrip</div>
-        </div>
-        <div class="ui active progress pAngular">
-            <div class="bar">
-                <div class="progress"></div>
-            </div>
-            <div class="label">Angular</div>
-        </div>
-        <div class="ui active progress pPHP">
-            <div class="bar">
-                <div class="progress"></div>
-            </div>
-            <div class="label left floated">PHP</div>
-        </div>
-        <div class="ui active progress pC">
-            <div class="bar">
-                <div class="progress"></div>
-            </div>
-            <div class="label left floated">C</div>
-        </div>
-        <div class="ui active progress pNode">
-            <div class="bar">
-                <div class="progress"></div>
-            </div>
-            <div class="label">NodeJS</div>
-        </div>
-        <div class="ui active progress pMySQL">
-            <div class="bar">
-                <div class="progress"></div>
-            </div>
-            <div class="label left floated">MySQL</div>
-        </div>
-        <div class="ui active progress pPhotoShop">
-            <div class="bar">
-                <div class="progress"></div>
-            </div>
-            <div class="label left floated">PhotoShop</div>
-        </div>
-        <div class="ui active progress pIllustrator">
-            <div class="bar">
-                <div class="progress"></div>
-            </div>
-            <div class="label left floated">Illustrator</div>
         </div>
     </div>
 
@@ -386,7 +425,7 @@
                         <span class="time-wrapper"><span class="time">Avgust 2017</span></span>
                         <div class="desc">Projekat pod nazivom "Želim postati poduzetnik", za potrebe hrvatskih
                             fakulteta.
-                            <br><a href="http://poduzetnik.emineo.rs/" target="_blank">http://poduzetnik.emineo.rs</a>
+                            <br><a href="http://poduzetnik.efos.hr/" target="_blank">http://poduzetnik.efos.hr/</a>
                         </div>
                     </div>
                 </div>
@@ -449,7 +488,7 @@
                         <span class="time-wrapper"><span class="time">Avgust 2017</span></span>
                         <div class="desc">Projekat pod nazivom "Želim postati poduzetnik", za potrebe hrvatskih
                             fakulteta.
-                            <br><a href="http://poduzetnik.emineo.rs/" target="_blank">http://poduzetnik.emineo.rs</a>
+                            <br><a href="http://poduzetnik.efos.hr/" target="_blank">http://poduzetnik.efos.hr/</a>
                         </div>
                     </div>
                 </div>
@@ -715,7 +754,6 @@
             <button class="ui button black fluid" type="submit">Pošalji</button>
         </form>
     </div>
-
 </div>
 
 <div class="ui tiny modal">

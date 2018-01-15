@@ -1,35 +1,37 @@
 let app = angular.module('myApp', []);
 
-app.controller('myCtrl',['$scope', '$http', function ($scope, $http) {
+app.controller('myCtrl', ['$scope', '$http', function ($scope, $http) {
 
-    $scope.uMail ={
-    };
+    $scope.uMail = {};
 
     AOS.init({
         duration: 900
     });
 
-    $(".scroll-btn").click(function() {
+    $(".scroll-btn").click(function () {
         $('html,body').animate({
-                scrollTop: $("#second").offset().top -28},
+                scrollTop: $("#second").offset().top - 28
+            },
             1000);
     });
 
     $scope.navBar = true;
 
-    $(".mail").click(function() {
+    $(".mail").click(function () {
         $('html,body').animate({
-                scrollTop: $(".footer").offset().top -30},
+                scrollTop: $(".footer").offset().top - 30
+            },
             1000);
     });
-    $(".contactMe").click(function() {
+    $(".contactMe").click(function () {
         $('html,body').animate({
-                scrollTop: $(".footer").offset().top -30},
+                scrollTop: $(".footer").offset().top - 30
+            },
             1000);
     });
 
     (function ($) {
-        $(document).ready(function(){
+        $(document).ready(function () {
 
             // hide .navbar first
             $(".menu").hide();
@@ -50,16 +52,16 @@ app.controller('myCtrl',['$scope', '$http', function ($scope, $http) {
     }(jQuery));
 
     // ===== Scroll to Top ====
-    $(window).scroll(function() {
+    $(window).scroll(function () {
         if ($(this).scrollTop() >= 600) {        // If page is scrolled more than 50px
-            $('.backtotop').fadeIn({duration  : 400});    // Fade in the arrow
+            $('.backtotop').fadeIn({duration: 400});    // Fade in the arrow
         } else {
-            $('.backtotop').fadeOut({duration  : 400});   // Else fade out the arrow
+            $('.backtotop').fadeOut({duration: 400});   // Else fade out the arrow
         }
     });
-    $('.backtotop').click(function() {      // When arrow is clicked
+    $('.backtotop').click(function () {      // When arrow is clicked
         $('body,html').animate({
-            scrollTop : 0                       // Scroll to top of body
+            scrollTop: 0                       // Scroll to top of body
         }, 500);
     });
 
@@ -71,16 +73,16 @@ app.controller('myCtrl',['$scope', '$http', function ($scope, $http) {
         percent: 81
     });
     $('.pJS').progress({
-        percent: 73
+        percent: 79
     });
     $('.pAngular').progress({
-        percent: 78
+        percent: 74
     });
     $('.pPHP').progress({
         percent: 42
     });
     $('.pC').progress({
-        percent: 39
+        percent: 65
     });
     $('.pNode').progress({
         percent: 71
@@ -96,17 +98,15 @@ app.controller('myCtrl',['$scope', '$http', function ($scope, $http) {
     });
 
 
-    $('.about-me-img').hover(function(){
+    $('.about-me-img').hover(function () {
         $('.authorWindowWrapper').stop().fadeIn('fast').find('p').addClass('trans');
-    }, function(){
+    }, function () {
         $('.authorWindowWrapper').stop().fadeOut('fast').find('p').removeClass('trans');
     });
 
 
-
-
     $scope.sendMail = function () {
-        if( $('.ui.form').form('is valid')[0]){
+        if ($('.ui.form').form('is valid')[0]) {
             $http.post('/sendMail', {}, {params: $scope.uMail})
                 .then(function (res) {
                     $('.ui.inverted.dimmer').dimmer('show');
@@ -116,7 +116,6 @@ app.controller('myCtrl',['$scope', '$http', function ($scope, $http) {
 
 
     //SLIDER
-
 
 
     // LOADER
@@ -129,10 +128,10 @@ app.controller('myCtrl',['$scope', '$http', function ($scope, $http) {
     $('.ui.form')
         .form({
             fields: {
-                uName     : 'empty',
-                uEmail   : 'email',
-                uSubject : 'empty',
-                uMessage : 'empty'
+                uName: 'empty',
+                uEmail: 'email',
+                uSubject: 'empty',
+                uMessage: 'empty'
             }
         });
 
@@ -144,17 +143,34 @@ app.controller('myCtrl',['$scope', '$http', function ($scope, $http) {
     $(window).scroll(function () {
         $('.navibarProgress').progress('set progress', $(document).scrollTop() + $(window).height());
 
-        if($(window).scrollTop() + $(window).height() === $(document).height()){
+        if ($(window).scrollTop() + $(window).height() === $(document).height()) {
             $('.navibarProgress').progress('set progress', $(document).height());
         }
     });
 
     $('.ui.button.black').click(function () {
-        if( $('.ui.form').form('is valid')[0]){
+        if ($('.ui.form').form('is valid')[0]) {
 
             $('.ui.modal')
                 .modal('show');
 
         }
     });
+    //get ip
+    $http.get('/getIP')
+        .then(function (res) {
+            $scope.location = res.data;
+        });
+
+//    popout
+    $('._location').popup({
+        popup: $('.flowing.popup'),
+        on: 'click',
+        inline: true,
+        hoverable: true
+    })
+        .click(function () {
+            $('.floating.ui.label').hide();
+        })
+    ;
 }]);

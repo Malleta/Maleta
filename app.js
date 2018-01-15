@@ -5,7 +5,6 @@ let logger = require('morgan');
 let cookieParser = require('cookie-parser');
 let bodyParser = require('body-parser');
 
-
 let home = require('./routes/homeRoutes');
 let users = require('./routes/users');
 
@@ -43,5 +42,4 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
-
 module.exports = app;

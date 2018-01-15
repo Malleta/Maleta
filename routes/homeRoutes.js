@@ -1,12 +1,21 @@
 let express = require('express');
 let nodemailer = require('nodemailer');
 let router = express.Router();
+let publicIP = require('public-ip');
+let locationIP = require('iplocation');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('homePage', { title: 'Home', javaScript: 'homeJS'});
 });
 
+router.get('/getIP', function(req, res) {
+    publicIP.v4().then(ip => {
+        locationIP(ip, function (err, result) {
+            res.json(result);
+        })
+    });
+});
 
 router.post('/sendMail', function(req, res) {
 
@@ -24,7 +33,6 @@ router.post('/sendMail', function(req, res) {
         subject: req.query.uSubject, // Subject line
         html: `${req.query.uMessage}<br><br> ${req.query.uEmail}<br> Sent from <b>Maleta</b>`
     };
-    console.log(mailOptions);
 
     transporter.sendMail(mailOptions, (error, info) => {
         if (error) {
