@@ -10,11 +10,13 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/getIP', function(req, res) {
-    publicIP.v4().then(ip => {
-        locationIP(ip, function (err, result) {
-            res.json(result);
-        })
-    });
+    res.json(req.connection.remoteAddress);
+    // publicIP.v4().then(ip => {
+    //     res.json(ip);
+    //     // locationIP(ip, function (err, result) {
+    //     //     res.json(result);
+    //     // })
+    // });
 });
 
 router.post('/sendMail', function(req, res) {

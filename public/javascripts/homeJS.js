@@ -1,8 +1,10 @@
 let app = angular.module('myApp', []);
 
+
+
 app.controller('myCtrl', ['$scope', '$http', function ($scope, $http) {
 
-    $scope.uMail = {};
+
 
     AOS.init({
         duration: 900
