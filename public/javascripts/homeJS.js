@@ -156,7 +156,6 @@ app.controller('myCtrl', ['$scope', '$http', function ($scope, $http) {
     });
     //get ip
     $http.get('//ipfind.co/me?auth=05ec8abd-bfbb-4162-ac64-138400c69227\n').then(function (res) {
-        console.log(res.data);
         $scope.location = res.data;
     });
 
