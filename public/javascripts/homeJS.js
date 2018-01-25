@@ -1,8 +1,11 @@
-let app = angular.module('myApp', []);
-
-
+let app = angular.module('myApp', ['pascalprecht.translate']);
 
 app.controller('myCtrl', ['$scope', '$http', function ($scope, $http) {
+
+    //Content
+
+
+
 
 
 
@@ -159,11 +162,10 @@ app.controller('myCtrl', ['$scope', '$http', function ($scope, $http) {
         }
     });
     //get ip
-    $http.get('/getIP')
-        .then(function (res) {
-            console.log(res);
-            $scope.location = res.data;
-        });
+    $http.get('//ipfind.co/me?auth=05ec8abd-bfbb-4162-ac64-138400c69227\n').then(function (res) {
+        console.log(res.data);
+        $scope.location = res.data;
+    });
 
 //    popout
     $('._location').popup({
