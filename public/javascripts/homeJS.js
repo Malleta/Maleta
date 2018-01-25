@@ -1,13 +1,6 @@
-let app = angular.module('myApp', ['pascalprecht.translate']);
+let app = angular.module('myApp', []);
 
 app.controller('myCtrl', ['$scope', '$http', function ($scope, $http) {
-
-    //Content
-
-
-
-
-
 
     AOS.init({
         duration: 900
