@@ -17,18 +17,18 @@
 
 
 <body class="noScroll" ng-controller="myCtrl">
-<div class="overlay">
-<div id="loader">
-<ul>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
-</ul>
-</div>
-</div>
+<!--<div class="overlay">-->
+<!--<div id="loader">-->
+<!--<ul>-->
+<!--<li></li>-->
+<!--<li></li>-->
+<!--<li></li>-->
+<!--<li></li>-->
+<!--<li></li>-->
+<!--<li></li>-->
+<!--</ul>-->
+<!--</div>-->
+<!--</div>-->
 
 <div ng-hide="false" class="ui fixed inverted menu">
     <div class="ui container">
@@ -51,17 +51,22 @@
     <div class="ui flowing popup top left transition" style="width: 23rem">
         <div class="ui grid" style="padding: 0 2rem 2rem 2rem">
             <div class="sixteen wide column">
-            <h2 class="ui large center aligned icon header" style="font-family: 'Lobster', cursive;">
-                <i class="circular world icon"></i>
-                {{location.country}}         <i class="{{location.country_code.toLowerCase()}} flag"
-                                  style="background: transparent; padding:0; margin: 0"></i>
-            </h2>
+                <h2 class="ui large center aligned icon header" style="font-family: 'Lobster', cursive;">
+                    <i class="circular world icon"></i>
+                    {{location.country}} <i class="{{location.country_code.toLowerCase()}} flag"
+                                            style="background: transparent; padding:0; margin: 0"></i>
+                </h2>
             </div>
             <div class="sixteen wide column">
-            <p>Automacki jezik prema Vašoj lokaciji.</p>
+                <div class="ui segment">
+                    <p>Automacki jezik prema Vašoj lokaciji.</p>
+                </div>
                 <h3 class="ui divider"></h3>
-                <p>I don't understand, translate to <i class="gb flag"
-                                                       style="background: transparent; padding:0; margin: 0"></i></p>
+                <div class="ui segment">
+                    <p>I don't understand, translate to <i class="gb flag"
+                                                           style="background: transparent; padding:0; margin: 0"></i>
+                    </p>
+                </div>
             </div>
         </div>
     </div>
@@ -70,9 +75,9 @@
 <!--Head-->
 <div id="first" class="computer only ui grid sixteen wide column center aligned">
     <div class="headPage">
-        <h5>Zdravo, ja sam</h5>
-        <h1>Nikola Maletić</h1>
-        <h5 style="color: white">Web developer</h5>
+        <h5>{{'introducing.hello'|translate}}</h5>
+        <h1>{{'introducing.fullName'|translate}}</h1>
+        <h5 style="color: white">{{'introducing.webDeveloper'|translate}}</h5>
         <div class="ui grid center aligned">
             <div class="sixteen wide column icons">
                 <a href="https://www.facebook.com/leMaleta88" target="_blank">
@@ -98,9 +103,9 @@
 <!--Mobile/Tablet-->
 <div id="first" class="tablet only mobile only ui grid sixteen wide column center aligned">
     <div class="headPage">
-        <h5>Zdravo, ja sam</h5>
-        <h1>Nikola Maletić</h1>
-        <h5 style="color: white">Web developer</h5>
+        <h5>{{'introducing.hello'|translate}}</h5>
+        <h1>{{'introducing.fullName'|translate}}</h1>
+        <h5 style="color: white">{{'introducing.webDeveloper'|translate}}</h5>
         <div class="ui grid center aligned">
             <div class="sixteen wide column icons">
                 <a href="https://www.facebook.com/leMaleta88" target="_blank">
@@ -118,44 +123,30 @@
 <!--About Myself-->
 <div style="margin: 0 0 0 0;" id="second" class="computer only ui grid sixteen wide column">
     <div class="ui grid twelve wide column centered aligned middle aligned">
-        <h1 class="TabHead">Nekoliko reči o sebi</h1>
+        <h1 class="TabHead">{{'aboutMe.title'|translate}}</h1>
         <div class="four wide column">
             <img class="ui medium circular image" src="images/profile.jpg" alt="Profile picture"/>
         </div>
         <div class="ui eleven wide column">
             <p style="font-size: 18px; text-align: justify">
-                Najradije bih ostavio Lorem Ipsum na ovom mestu, ne volim da pričam o sebi, ali pošto je ovo moj
-                portfolio, evo nekoliko reči. Zainteresovanost sa računare je počela još od osnovne škole i od tada pa
-                sve do sada traje moje upoznavanje. Uvek sam se pitako kako nešto radi, ali ne samo površinu, nego do
-                najmanje čestice. Čim sam počeo da programiram otvorile su mi se oči i mogao sam da vidim samu srž. Sve
-                je počelo banalno, prvi Counter Strike 1.6 server koji sam držao i posle modove koje sam modifikovao,
-                sve je tako počelo... Da ne tupim previše, mlad sam, smatram da imam jako dobro logiku, radi nešto dok
-                to ne završim, koliko god vremena oduzimalo, sve dok mislim da je važno. Isto tako sam lako lenj za neke
-                stvari, ako rešenje može da se postigne preko računara / mašine, potrošiću ceo dan tražeći rešenje za
-                tako nešto, pre nego što ću to isto ručno uraditi za dva sata.. Ljubitelj sam Star Wars-a. Toliko od
-                mene, sve ostale stvari su dole,<br>Sve najbolje.
+                {{'aboutMe.content'|translate}}
+                <br>
+                {{'aboutMe.greetings'|translate}}
             </p>
         </div>
     </div>
 </div>
 <!--Mobile/Tablet-->
 <div style="margin: 0 0 0 0;" class="tablet only mobile only ui grid sixteen wide column center aligned">
-    <h1 class="TabHeadMobile">Nekoliko reči o sebi</h1>
+    <h1 class="TabHeadMobile">{{'aboutMe.title'|translate}}</h1>
     <div class="fourteen wide column">
         <img class="ui medium circular image" src="images/profile.jpg" alt="Profile picture"/>
     </div>
     <div class="sixteen wide column">
         <p style="font-size: 18px; text-align: justify">
-            Najradije bih ostavio Lorem Ipsum na ovom mestu, ne volim da pričam o sebi, ali pošto je ovo moj
-            portfolio, evo nekoliko reči. Zainteresovanost sa računare je počela još od osnovne škole i od tada pa
-            sve do sada traje moje upoznavanje. Uvek sam se pitako kako nešto radi, ali ne samo površinu, nego do
-            najmanje čestice. Čim sam počeo da programiram otvorile su mi se oči i mogao sam da vidim samu srž. Sve
-            je počelo banalno, prvi Counter Strike 1.6 server koji sam držao i posle modove koje sam modifikovao,
-            sve je tako počelo... Da ne tupim previše, mlad sam, smatram da imam jako dobro logiku, radi nešto dok
-            to ne završim, koliko god vremena oduzimalo, sve dok mislim da je važno. Isto tako sam lako lenj za neke
-            stvari, ako rešenje može da se postigne preko računara / mašine, potrošiću ceo dan tražeći rešenje za
-            tako nešto, pre nego što ću to isto ručno uraditi za dva sata.. Ljubitelj sam Star Wars-a. Toliko od
-            mene, sve ostale stvari su dole,<br>Sve najbolje.
+            {{'aboutMe.content'|translate}}
+            <br>
+            {{'aboutMe.greetings'|translate}}
         </p>
     </div>
 </div>
@@ -164,45 +155,42 @@
 <div id="third" class="computer only ui grid sixteen wide column">
     <div class="ui grid twelve wide column centered aligned">
         <div class="seven wide column">
-            <h2 style="font-family: 'Lobster', cursive;">Profil</h2>
+            <h2 style="font-family: 'Lobster', cursive;">{{'profile.profile'|translate}}</h2>
             <p style="font-size: 20px; text-align: justify">
-                21-godšnji Web developer iz Beograda
-                koji više ceni praktično
-                nego teorijsko znanje.
+                {{'profile.details'|translate}}
             </p>
             <div class="ui segment">
-                <p class="infoHead">Puno ime:</p>
-                <p class="infoDetails">Nikola Maletić</p>
+                <p class="infoHead">{{'profile.fullNameHead'|translate}}</p>
+                <p class="infoDetails">{{'profile.fullName'|translate}}</p>
             </div>
             <div class="ui segment">
-                <p class="infoHead">Datum rođenja:</p>
-                <p class="infoDetails">20 Decembar</p>
+                <p class="infoHead">{{'profile.dateOfBirthHead'|translate}}</p>
+                <p class="infoDetails">{{'profile.dateOfBirth'|translate}}</p>
             </div>
             <div class="ui segment">
-                <p class="infoHead">Student:</p>
-                <p class="infoDetails">Računarski fakultet</p>
+                <p class="infoHead">{{'profile.currentHead'|translate}}</p>
+                <p class="infoDetails">{{'profile.current'|translate}}</p>
             </div>
             <div class="ui segment">
-                <p class="infoHead">WebSite:</p>
-                <p class="infoDetails">https://maleta.herokuapp.com/</p>
+                <p class="infoHead">{{'profile.webSiteHead'|translate}}</p>
+                <p class="infoDetails">{{'profile.webSite'|translate}}</p>
             </div>
             <div class="ui segment">
-                <p class="infoHead">Skype:</p>
-                <p class="infoDetails">nmmaleta@gmail.com</p>
+                <p class="infoHead">{{'profile.skypeHead'|translate}}</p>
+                <p class="infoDetails">{{'profile.skype'|translate}}</p>
             </div>
             <div class="ui segment">
-                <p class="infoHead">Email:</p>
-                <p class="infoDetails" style="margin: 0">nmmaleta@gmail.com</p>
-                <p class="infoDetails" style="margin: 0">maleta96@gmail.com</p>
+                <p class="infoHead">{{'profile.email.head'|translate}}</p>
+                <p class="infoDetails" style="margin: 0">{{'profile.email.1'|translate}}</p>
+                <p class="infoDetails" style="margin: 0">{{'profile.email.2'|translate}}</p>
             </div>
 
         </div>
         <div class="seven wide column">
-            <h2 style="font-family: 'Lobster', cursive;">Znanje</h2>
+            <h2 style="font-family: 'Lobster', cursive;">{{'knowledge.head'|translate}}</h2>
             <p style="font-size: 20px; text-align: justify">
-                Znanje koje sam do sada stekao i koje se svakodnevno dopunjava.
-                Predstavljeno je u statusnom baru.<br>
-                Verujem da niko ne može objektivno sebe da prikaže, ovo je moj pokušaj.
+                {{'knowledge.details.1'|translate}}<br>
+                {{'knowledge.details.2'|translate}}
             </p>
             <div class="ui segment">
                 <div class="ui active progress pHTML" id="pHTML">
@@ -272,7 +260,7 @@
             <a href="https://drive.google.com/file/d/0B70TpMNWhWKoVUktU1lIM05mWGs/view?usp=sharing" target="_blank"
                style="padding: 1rem 3rem 1rem 3rem" class="ui black icon button ">
                 <i class="download icon"></i>
-                Preuzmite CV
+                {{'cvButton'|translate}}
             </a>
         </div>
     </div>
@@ -282,46 +270,42 @@
 <div id="third" class="tablet only mobile only ui grid sixteen wide column centered aligned">
 
     <div class="sixteen wide column">
-        <h2 style="font-family: 'Lobster', cursive;">Profil</h2>
+        <h2 style="font-family: 'Lobster', cursive;">{{'profile.profile'|translate}}</h2>
         <p style="font-size: 20px; text-align: justify">
-            21-godšnji Web developer iz Beograda
-            koji više ceni praktično
-            nego teorijsko znanje.
+            {{'profile.details'|translate}}
         </p>
-
         <div class="ui segment">
-            <p class="infoHead">Puno ime:</p>
-            <p class="infoDetails">Nikola Maletić</p>
+            <p class="infoHead">{{'profile.fullNameHead'|translate}}</p>
+            <p class="infoDetails">{{'profile.fullName'|translate}}</p>
         </div>
         <div class="ui segment">
-            <p class="infoHead">Datum rođenja:</p>
-            <p class="infoDetails">20 Decembar 1996</p>
+            <p class="infoHead">{{'profile.dateOfBirthHead'|translate}}</p>
+            <p class="infoDetails">{{'profile.dateOfBirth'|translate}}</p>
         </div>
         <div class="ui segment">
-            <p class="infoHead">Student:</p>
-            <p class="infoDetails">Računarski fakultet</p>
+            <p class="infoHead">{{'profile.currentHead'|translate}}</p>
+            <p class="infoDetails">{{'profile.current'|translate}}</p>
         </div>
         <div class="ui segment">
-            <p class="infoHead">WebSite:</p>
-            <p class="infoDetails">https://maleta.herokuapp.com/</p>
+            <p class="infoHead">{{'profile.webSiteHead'|translate}}</p>
+            <p class="infoDetails">{{'profile.webSite'|translate}}</p>
         </div>
         <div class="ui segment">
-            <p class="infoHead">Skype:</p>
-            <p class="infoDetails">nmmaleta@gmail.com</p>
+            <p class="infoHead">{{'profile.skypeHead'|translate}}</p>
+            <p class="infoDetails">{{'profile.skype'|translate}}</p>
         </div>
         <div class="ui segment">
-            <p class="infoHead">Email:</p>
-            <p class="infoDetails" style="margin: 0">nmmaleta@gmail.com</p>
-            <p class="infoDetails" style="margin: 0">maleta96@gmail.com</p>
+            <p class="infoHead">{{'profile.email.head'|translate}}</p>
+            <p class="infoDetails" style="margin: 0">{{'profile.email.1'|translate}}</p>
+            <p class="infoDetails" style="margin: 0">{{'profile.email.2'|translate}}</p>
         </div>
     </div>
 
     <div class="sixteen wide column">
-        <h2 style="font-family: 'Lobster', cursive;">Znanje</h2>
+        <h2 style="font-family: 'Lobster', cursive;">{{'knowledge.head'|translate}}</h2>
         <p style="font-size: 20px; text-align: justify">
-            Znanje koje sam do sada stekao i koje se svakodnevno dopunjava.
-            Predstavljeno je u statusnom baru.<br>
-            Verujem da niko ne može objektivno sebe da prikaže, ovo je moj pokušaj.
+            {{'knowledge.details.1'|translate}}<br>
+            {{'knowledge.details.2'|translate}}
         </p>
         <div class="ui segment">
             <div class="ui active progress pHTML" id="pHTML">
@@ -391,7 +375,7 @@
         <a href="https://drive.google.com/file/d/0B70TpMNWhWKoVUktU1lIM05mWGs/view?usp=sharing" target="_blank"
            style="padding: 1rem 3rem 1rem 3rem" class="ui black basic icon button ">
             <i class="download icon"></i>
-            Preuzmite CV
+            {{'cvButton'|translate}}
         </a>
     </div>
 </div>
@@ -400,10 +384,10 @@
 <div class="ui grid middle aligned centered aligned imageDiv contactMe">
     <div class="sixteen wide column center aligned">
         <h1 style="color: white">
-            Želite da me kontaktirate?
-        </h1>
+            {{'contactField.head'|translate}}
+        </h1><br>
         <button class="ui inverted button">
-            Pošaljite poruku
+            {{'contactField.button'|translate}}
         </button>
     </div>
 </div>
@@ -411,7 +395,7 @@
 <!--TimeLine-->
 <div class="computer only ui grid sixteen wide column centered aligned">
     <div class="ui grid sixteen wide column center aligned timelineHeader">
-        <span>Radno iskustvo</span>
+        <span>{{'workExp.head'|translate}}</span>
     </div>
 
     <ul class="timeline">
@@ -423,8 +407,7 @@
                     <div data-aos="fade-left" data-aos-once="true">
                         <span class="flag">Želim postati poduzetnik</span>
                         <span class="time-wrapper"><span class="time">Avgust 2017</span></span>
-                        <div class="desc">Projekat pod nazivom "Želim postati poduzetnik", za potrebe hrvatskih
-                            fakulteta.
+                        <div class="desc">{{'workExp.content.1'|translate}}
                             <br><a href="http://poduzetnik.efos.hr/" target="_blank">http://poduzetnik.efos.hr/</a>
                         </div>
                     </div>
@@ -434,7 +417,7 @@
     </ul>
 
     <div class="ui grid sixteen wide column center aligned timelineHeaderSecond">
-        <span>Obrazovanje</span>
+        <span>{{'education.head'|translate}}</span>
     </div>
 
     <ul class="timeline timelineSecond">
@@ -446,8 +429,7 @@
                     <div data-aos="fade-right" data-aos-once="true">
                         <span class="flag">Računarski fakultet</span>
                         <span class="time-wrapper"><span class="time">Septembar 2015</span></span>
-                        <div class="desc">Računarski fakultet, smer Informaione tehnologije. Trenutno na trećoj godini
-                            studija.
+                        <div class="desc">{{'education.content.1'|translate}}
                             <br><a href="https://raf.edu.rs/" target="_blank">https://raf.edu.rs</a>
                         </div>
                     </div>
@@ -462,7 +444,7 @@
                     <div data-aos="fade-left" data-aos-once="true">
                         <span class="flag">ETŠ "Nikola Tesla"</span>
                         <span class="time-wrapper"><span class="time">Septembar 2011 - Jun 2015</span></span>
-                        <div class="desc">Završena srednja elektro-tehnička škola u Beogradu.
+                        <div class="desc">{{'education.content.2'|translate}}
                             <br><a href="http://www.teslabg.edu.rs" target="_blank">http://www.teslabg.edu.rs</a>
                         </div>
                     </div>
@@ -473,34 +455,11 @@
 </div>
 <!--Mobile/Tablet-->
 <div class="tablet only mobile only ui grid sixteen wide column centered aligned">
-    <div class="ui grid sixteen wide column center aligned timelineHeader">
-        <span>Radno iskustvo</span>
-    </div>
-
-    <ul class="timelineMobile">
-        <!-- Item 1 -->
-        <li>
-            <div class="direction-r">
-                <div class="flag-wrapper">
-                    <span class="hexa"></span>
-                    <div data-aos="fade-left" data-aos-once="true">
-                        <span class="flag">Želim postati poduzetnik</span>
-                        <span class="time-wrapper"><span class="time">Avgust 2017</span></span>
-                        <div class="desc">Projekat pod nazivom "Želim postati poduzetnik", za potrebe hrvatskih
-                            fakulteta.
-                            <br><a href="http://poduzetnik.efos.hr/" target="_blank">http://poduzetnik.efos.hr/</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </li>
-    </ul>
-
     <div class="ui grid sixteen wide column center aligned timelineHeaderSecond">
-        <span>Obrazovanje</span>
+        <span>{{'education.head'|translate}}</span>
     </div>
 
-    <ul class="timelineMobile">
+    <ul class="timeline timelineSecond">
         <!-- Item 1 -->
         <li>
             <div class="direction-l">
@@ -509,8 +468,7 @@
                     <div data-aos="fade-right" data-aos-once="true">
                         <span class="flag">Računarski fakultet</span>
                         <span class="time-wrapper"><span class="time">Septembar 2015</span></span>
-                        <div class="desc">Računarski fakultet, smer Informaione tehnologije. Trenutno na trećoj godini
-                            studija.
+                        <div class="desc">{{'education.content.1'|translate}}
                             <br><a href="https://raf.edu.rs/" target="_blank">https://raf.edu.rs</a>
                         </div>
                     </div>
@@ -525,7 +483,7 @@
                     <div data-aos="fade-left" data-aos-once="true">
                         <span class="flag">ETŠ "Nikola Tesla"</span>
                         <span class="time-wrapper"><span class="time">Septembar 2011 - Jun 2015</span></span>
-                        <div class="desc">Završena srednja elektro-tehnička škola u Beogradu.
+                        <div class="desc">{{'education.content.2'|translate}}
                             <br><a href="http://www.teslabg.edu.rs" target="_blank">http://www.teslabg.edu.rs</a>
                         </div>
                     </div>
@@ -669,15 +627,15 @@
 
 
 <div class="computer only ui grid twelve wide column footer">
-    <div class="sixteen wide column"><h1 class="TabHead">Kontaktirajte me</h1></div>
+    <div class="sixteen wide column"><h1 class="TabHead">{{'emailField.head'|translate}}</h1></div>
     <div class="two wide column"></div>
 
     <div class="six wide column raised">
         <form class="ui form">
             <div class="two fields">
                 <div class="field">
-                    <label>Ime</label>
-                    <input type="text" name="uName" ng-model="uMail.uName" placeholder="Ime">
+                    <label>{{'emailField.form.name'|translate}}</label>
+                    <input type="text" name="uName" ng-model="uMail.uName" placeholder="{{'emailField.form.name'|translate}}">
                 </div>
                 <div class="field">
                     <label>Email</label>
@@ -686,15 +644,15 @@
             </div>
 
             <div class="field">
-                <label>Naslov</label>
-                <input type="text" name="uSubject" ng-model="uMail.uSubject" placeholder="Naslov / predmet">
+                <label>{{'emailField.form.title'|translate}}</label>
+                <input type="text" name="uSubject" ng-model="uMail.uSubject" placeholder="{{'emailField.form.title'|translate}}">
             </div>
             <div class="field">
-                <label>Poruka</label>
-                <textarea name="uMessage" ng-model="uMail.uMessage" placeholder="Poruka"></textarea>
+                <label>{{'emailField.form.message'|translate}}</label>
+                <textarea name="uMessage" ng-model="uMail.uMessage" placeholder="{{'emailField.form.message'|translate}}"></textarea>
             </div>
             <div class="ui center aligned grid">
-                <button class="ui button black four wide column" type="submit">Pošalji</button>
+                <button class="ui button black four wide column" type="submit">{{'emailField.form.button'|translate}}</button>
             </div>
         </form>
 
@@ -703,7 +661,7 @@
                 <div class="center">
                     <h2 class="ui black icon header">
                         <i class="mail icon"></i>
-                        Poruka je uspešno poslata!
+                        {{'emailField.form.successMsg'|translate}}
                     </h2>
                 </div>
             </div>
@@ -734,24 +692,26 @@
         <form class="ui form">
             <div class="two fields">
                 <div class="field">
-                    <label>Ime</label>
-                    <input type="text" ng-model="uMail.uName" placeholder="Ime">
+                    <label>{{'emailField.form.name'|translate}}</label>
+                    <input type="text" name="uName" ng-model="uMail.uName" placeholder="{{'emailField.form.name'|translate}}">
                 </div>
                 <div class="field">
                     <label>Email</label>
-                    <input type="text" ng-model="uMail.uEmail" placeholder="Email">
+                    <input type="text" name="uEmail" ng-model="uMail.uEmail" placeholder="Email">
                 </div>
             </div>
 
             <div class="field">
-                <label>Naslov</label>
-                <input type="text" ng-model="uMail.uSubject" placeholder="Naslov / predmet">
+                <label>{{'emailField.form.title'|translate}}</label>
+                <input type="text" name="uSubject" ng-model="uMail.uSubject" placeholder="{{'emailField.form.title'|translate}}">
             </div>
             <div class="field">
-                <label>Poruka</label>
-                <textarea ng-model="uMail.uMessage" placeholder="Poruka"></textarea>
+                <label>{{'emailField.form.message'|translate}}</label>
+                <textarea name="uMessage" ng-model="uMail.uMessage" placeholder="{{'emailField.form.message'|translate}}"></textarea>
             </div>
-            <button class="ui button black fluid" type="submit">Pošalji</button>
+            <div class="ui center aligned grid">
+                <button class="ui button black four wide column" type="submit">{{'emailField.form.button'|translate}}</button>
+            </div>
         </form>
     </div>
 </div>
@@ -759,14 +719,14 @@
 <div class="ui tiny modal">
     <div class="ui icon header">
         <i class="mail icon"></i>
-        Da li je sve u redu?
+        {{'checkEmail.head'|translate}}
     </div>
     <div class="content">
         <form class="ui form">
             <div class="two fields">
                 <div class="field">
-                    <label>Ime</label>
-                    <input readonly="" type="text" ng-model="uMail.uName" placeholder="Ime">
+                    <label>{{'emailField.form.name'|translate}}</label>
+                    <input readonly="" type="text" ng-model="uMail.uName" placeholder="{{'emailField.form.name'|translate}}">
                 </div>
                 <div class="field">
                     <label>Email</label>
@@ -775,23 +735,23 @@
             </div>
 
             <div class="field">
-                <label>Naslov</label>
-                <input readonly="" type="text" ng-model="uMail.uSubject" placeholder="Naslov / predmet">
+                <label>{{'emailField.form.title'|translate}}</label>
+                <input readonly="" type="text" ng-model="uMail.uSubject" placeholder="{{'emailField.form.title'|translate}}">
             </div>
             <div class="field">
-                <label>Poruka</label>
-                <textarea readonly="" ng-model="uMail.uMessage" placeholder="Poruka"></textarea>
+                <label>{{'emailField.form.message'|translate}}</label>
+                <textarea readonly="" ng-model="uMail.uMessage" placeholder="{{'emailField.form.message'|translate}}"></textarea>
             </div>
         </form>
     </div>
     <div class="actions">
         <div class="ui negative button">
             <i class="remove icon"></i>
-            Ne
+            {{'checkEmail.negBtn'|translate}}
         </div>
         <div ng-click="sendMail()" class="ui positive right labeled icon button">
             <i class="checkmark icon"></i>
-            Da, pošalji!
+            {{'checkEmail.posBtn'|translate}}
         </div>
     </div>
 </div>
@@ -815,6 +775,8 @@
 <script type="text/javascript" src="javascripts/fundamental/angular.min.js"></script>
 <script type="text/javascript" src="javascripts/fundamental/semantic.min.js"></script>
 <script type="text/javascript" src="javascripts/fundamental/aos.js"></script>
+<script type="text/javascript" src="javascripts/fundamental/angular-translate.js"></script>
+
 
 <script type="text/javascript" src="javascripts/homeJS.js"></script>
 
