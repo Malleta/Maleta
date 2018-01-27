@@ -349,16 +349,13 @@ app.controller('myCtrl', ['$scope', '$http', '$translate', function ($scope, $ht
     });
 
 //    popout
-    $('._location').popup({
-        popup: $('.flowing.popup'),
-        on: 'click',
-        inline: true,
-        hoverable: true
-    })
-        .click(function () {
-            $('.floating.ui.label').hide();
-        })
-    ;
+$scope.showPopup = false;
+$scope.showPopupFun = function () {
+    $('.floating.ui.label').hide();
+};
+
+    // $('.floating.ui.label').hide();
+
     $scope.currentLanguage = 'en';
     $scope.changeLanguage = function (key) {
         $translate.use(key);

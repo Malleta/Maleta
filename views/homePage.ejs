@@ -35,44 +35,43 @@
         <a class="header item">
             NM
         </a>
-        <!--todo Sirina progress bara mora da bude responsivna, trenunto je fiksirana na 70rem-a.-->
-        <div class="ui middle aligned grid item">
-            <div class="ui grid tiny progress navibarProgress">
-                <div class="bar colorRed">
+        <a class="ui right aligned middle aligned grid item" style="width:90%; border-left: none">
+                <div class="ui grid tiny progress navibarProgress" style="width:100%">
+                    <div class="bar colorRed"></div>
                 </div>
-            </div>
-        </div>
+        </a>
+        <a ng-click="showPopup = !showPopup; showPopupFun()" class="item _location" style="cursor: pointer;">
+            <div class="floating ui red label" style="font-size: .5em; top:1.1em; left:76%">!</div>
+            <i class="{{location.country_code.toLowerCase()}} flag"
+               style="background: transparent; padding:0; margin: 0"></i>
+        </a>
     </div>
-    <a class="item _location" style="cursor: pointer; left: 84.3rem;">
-        <div class="floating ui red label" style="font-size: .5em; top:1.1em; left:76%">!</div>
-        <i class="{{location.country_code.toLowerCase()}} flag"
-           style="background: transparent; padding:0; margin: 0"></i>
-    </a>
-    <div class="ui flowing popup top left transition" style="width: 23rem">
-        <div class="ui grid" style="padding: 0 1.5rem 1.5rem 1.5rem">
-            <div class="sixteen wide column">
-                <h2 class="ui large center aligned icon header" style="font-family: 'Lobster', cursive;">
-                    <i class="circular world icon"></i>
-                     {{'language.1' | translate}}{{location.country}} <i class="{{location.country_code.toLowerCase()}} flag"
-                                            style="background: transparent; padding:0; margin: 0"></i>
-                </h2>
-            </div>
-            <div class="sixteen wide column">
-                <div class="ui segment">
-                    <p>{{'language.2' | translate}}</p>
-                </div>
-                <h3 class="ui divider"></h3>
-                <div ng-if="currentLanguage == 'en'" ng-click="changeLanguage('rs')" class="ui segment languageChange">
-                    <p>{{'language.3' | translate}}</p>
-                </div>
-                <div ng-if="currentLanguage == 'rs'" ng-click="changeLanguage('en')" class="ui segment languageChange">
-                    <p>{{'language.3' | translate}}</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
 </div>
+<div ng-show="showPopup" class="ui right floating segment raised black _dropdown">
+    <div class="ui grid" style="padding: 0 1.5rem 1.5rem 1.5rem">
+        <div class="sixteen wide column">
+            <h2 class="ui large center aligned icon header" style="font-family: 'Lobster', cursive;">
+                <i class="circular world icon"></i>
+                {{'language.1' | translate}}{{location.country}} <i
+                        class="{{location.country_code.toLowerCase()}} flag"
+                        style="background: transparent; padding:0; margin: 0"></i>
+            </h2>
+        </div>
+        <div class="sixteen wide column">
+            <div class="ui segment">
+                <p>{{'language.2' | translate}}</p>
+            </div>
+            <h3 class="ui divider"></h3>
+            <div ng-if="currentLanguage == 'en'" ng-click="changeLanguage('rs')" class="ui segment languageChange">
+                <p>{{'language.3' | translate}}</p>
+            </div>
+            <div ng-if="currentLanguage == 'rs'" ng-click="changeLanguage('en')" class="ui segment languageChange">
+                <p>{{'language.3' | translate}}</p>
+            </div>
+        </div>
+    </div>
+</div>
+
 <!--Head-->
 <div id="first" class="computer only ui grid sixteen wide column center aligned">
     <div class="headPage">
@@ -648,7 +647,8 @@
             <div class="two fields">
                 <div class="field">
                     <label>{{'emailField.form.name'|translate}}</label>
-                    <input type="text" name="uName" ng-model="uMail.uName" placeholder="{{'emailField.form.name'|translate}}">
+                    <input type="text" name="uName" ng-model="uMail.uName"
+                           placeholder="{{'emailField.form.name'|translate}}">
                 </div>
                 <div class="field">
                     <label>Email</label>
@@ -658,14 +658,17 @@
 
             <div class="field">
                 <label>{{'emailField.form.title'|translate}}</label>
-                <input type="text" name="uSubject" ng-model="uMail.uSubject" placeholder="{{'emailField.form.title'|translate}}">
+                <input type="text" name="uSubject" ng-model="uMail.uSubject"
+                       placeholder="{{'emailField.form.title'|translate}}">
             </div>
             <div class="field">
                 <label>{{'emailField.form.message'|translate}}</label>
-                <textarea name="uMessage" ng-model="uMail.uMessage" placeholder="{{'emailField.form.message'|translate}}"></textarea>
+                <textarea name="uMessage" ng-model="uMail.uMessage"
+                          placeholder="{{'emailField.form.message'|translate}}"></textarea>
             </div>
             <div class="ui center aligned grid">
-                <button class="ui button black four wide column" type="submit">{{'emailField.form.button'|translate}}</button>
+                <button class="ui button black four wide column" type="submit">{{'emailField.form.button'|translate}}
+                </button>
             </div>
         </form>
 
@@ -706,7 +709,8 @@
             <div class="two fields">
                 <div class="field">
                     <label>{{'emailField.form.name'|translate}}</label>
-                    <input type="text" name="uName" ng-model="uMail.uName" placeholder="{{'emailField.form.name'|translate}}">
+                    <input type="text" name="uName" ng-model="uMail.uName"
+                           placeholder="{{'emailField.form.name'|translate}}">
                 </div>
                 <div class="field">
                     <label>Email</label>
@@ -716,14 +720,17 @@
 
             <div class="field">
                 <label>{{'emailField.form.title'|translate}}</label>
-                <input type="text" name="uSubject" ng-model="uMail.uSubject" placeholder="{{'emailField.form.title'|translate}}">
+                <input type="text" name="uSubject" ng-model="uMail.uSubject"
+                       placeholder="{{'emailField.form.title'|translate}}">
             </div>
             <div class="field">
                 <label>{{'emailField.form.message'|translate}}</label>
-                <textarea name="uMessage" ng-model="uMail.uMessage" placeholder="{{'emailField.form.message'|translate}}"></textarea>
+                <textarea name="uMessage" ng-model="uMail.uMessage"
+                          placeholder="{{'emailField.form.message'|translate}}"></textarea>
             </div>
             <div class="ui center aligned grid">
-                <button class="ui button black four wide column" type="submit">{{'emailField.form.button'|translate}}</button>
+                <button class="ui button black four wide column" type="submit">{{'emailField.form.button'|translate}}
+                </button>
             </div>
         </form>
     </div>
@@ -739,7 +746,8 @@
             <div class="two fields">
                 <div class="field">
                     <label>{{'emailField.form.name'|translate}}</label>
-                    <input readonly="" type="text" ng-model="uMail.uName" placeholder="{{'emailField.form.name'|translate}}">
+                    <input readonly="" type="text" ng-model="uMail.uName"
+                           placeholder="{{'emailField.form.name'|translate}}">
                 </div>
                 <div class="field">
                     <label>Email</label>
@@ -749,11 +757,13 @@
 
             <div class="field">
                 <label>{{'emailField.form.title'|translate}}</label>
-                <input readonly="" type="text" ng-model="uMail.uSubject" placeholder="{{'emailField.form.title'|translate}}">
+                <input readonly="" type="text" ng-model="uMail.uSubject"
+                       placeholder="{{'emailField.form.title'|translate}}">
             </div>
             <div class="field">
                 <label>{{'emailField.form.message'|translate}}</label>
-                <textarea readonly="" ng-model="uMail.uMessage" placeholder="{{'emailField.form.message'|translate}}"></textarea>
+                <textarea readonly="" ng-model="uMail.uMessage"
+                          placeholder="{{'emailField.form.message'|translate}}"></textarea>
             </div>
         </form>
     </div>
