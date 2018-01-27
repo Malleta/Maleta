@@ -347,8 +347,6 @@ app.controller('myCtrl', ['$scope', '$http', '$translate', function ($scope, $ht
         $('.floating.ui.label').hide();
     };
 
-    // $('.floating.ui.label').hide();
-
     $scope.currentLanguage = 'en';
     $scope.changeLanguage = function (key) {
         $translate.use(key);
