@@ -10,17 +10,15 @@ app.config(function ($translateProvider) {
         },
         'aboutMe': {
             'title': 'Couple words about myself',
-            'content': "Najradije bih ostavio Lorem Ipsum na ovom mestu, ne volim da pričam o sebi, ali pošto je ovo moj\n" +
-            "                portfolio, evo nekoliko reči. Zainteresovanost sa računare je počela još od osnovne škole i od tada pa\n" +
-            "                sve do sada traje moje upoznavanje. Uvek sam se pitako kako nešto radi, ali ne samo površinu, nego do\n" +
-            "                najmanje čestice. Čim sam počeo da programiram otvorile su mi se oči i mogao sam da vidim samu srž. Sve\n" +
-            "                je počelo banalno, prvi Counter Strike 1.6 server koji sam držao i posle modove koje sam modifikovao,\n" +
-            "                sve je tako počelo... Da ne tupim previše, mlad sam, smatram da imam jako dobro logiku, radi nešto dok\n" +
-            "                to ne završim, koliko god vremena oduzimalo, sve dok mislim da je važno. Isto tako sam lako lenj za neke\n" +
-            "                stvari, ako rešenje može da se postigne preko računara / mašine, potrošiću ceo dan tražeći rešenje za\n" +
-            "                tako nešto, pre nego što ću to isto ručno uraditi za dva sata.. Ljubitelj sam Star Wars-a. Toliko od\n" +
-            "                mene, sve ostale stvari su dole,",
-            'greetings': 'Sve najbolje.'
+            'content': "I'd rather leave Lorem Ipsum, I don't like to talk about myself, " +
+            "but since this is my portfolio, here are a few words: Interest for computers has begun since elementary school. " +
+            "I've always wondered how something work, not only superficial, but rather to the smallest particle " +
+            "As soon as I started to code as time passes, part by part, I could see the whole picture " +
+            "Everything was started banally, with first Counter Strike 1.6 server, modes that I made... " +
+            "I've gone too far.. I'm young, with good logic, very persistent. Hate machine work, " +
+            "I would rather spend 2 hours to make some script to do something i could do in half hour." +
+            "I will stop here, down there are my skills,",
+            'greetings': 'Thanks for spending your time on this little introduction, all best.'
         },
         'profile': {
             'profile': 'Profile',
@@ -63,29 +61,33 @@ app.config(function ($translateProvider) {
                 'for the needs of Croatian faculties'
             }
         },
-        //todo ovde sam stiga sa prevodom, Cao, jebi se ti malo sutra
         'education': {
             'head': 'Education',
             'content': {
-                '1': 'Računarski fakultet, smer Informaione tehnologije. Trenutno na trećoj godini\n' +
-                '                            studija.',
-                '2': 'Završena srednja elektro-tehnička škola u Beogradu.'
+                '1': 'Računarski fakultet, department Information technology. Currently in the third year\n' +
+                '                            of study.',
+                '2': 'High school of electrical engineering in Belgrade.'
             }
         },
         'emailField': {
-            'head': 'Kontaktirajte me',
+            'head': 'Contact me',
             'form': {
-                'name': 'Ime',
-                'title': 'Naslov',
-                'message': 'Poruka',
-                'button': 'Pošalji',
-                'successMsg': 'Poruka je uspešno poslata!'
+                'name': 'Name',
+                'title': 'Title',
+                'message': 'Message',
+                'button': 'Send',
+                'successMsg': 'Message sent successfully!'
             }
         },
         'checkEmail': {
-            'head': 'Da li je sve u redu?',
-            'posBtn': 'Da, pošalji!',
-            'negBtn': 'Ne'
+            'head': 'Is everything alright?',
+            'posBtn': 'Yes, send!',
+            'negBtn': 'No'
+        },
+        'language': {
+            '1': 'Greetings ',
+            '2': 'The default language is English.',
+            '3': 'If you want to switch to Serbian, click here.'
         }
     });
     $translateProvider.translations('rs', {
@@ -98,7 +100,7 @@ app.config(function ($translateProvider) {
             'title': 'Nekoliko reči o sebi',
             'content': "Najradije bih ostavio Lorem Ipsum na ovom mestu, ne volim da pričam o sebi, ali pošto je ovo moj\n" +
             "                portfolio, evo nekoliko reči. Zainteresovanost sa računare je počela još od osnovne škole i od tada pa\n" +
-            "                sve do sada traje moje upoznavanje. Uvek sam se pitako kako nešto radi, ali ne samo površinu, nego do\n" +
+            "                sve do sada traje moje upoznavanje. Uvek sam se pitako kako nešto funkcioniše, ali ne samo površinu, nego do\n" +
             "                najmanje čestice. Čim sam počeo da programiram otvorile su mi se oči i mogao sam da vidim samu srž. Sve\n" +
             "                je počelo banalno, prvi Counter Strike 1.6 server koji sam držao i posle modove koje sam modifikovao,\n" +
             "                sve je tako počelo... Da ne tupim previše, mlad sam, smatram da imam jako dobro logiku, radi nešto dok\n" +
@@ -171,6 +173,11 @@ app.config(function ($translateProvider) {
             'head': 'Da li je sve u redu?',
             'posBtn': 'Da, pošalji!',
             'negBtn': 'Ne'
+        },
+        'language': {
+            '1': 'Zdravo',
+            '2': 'Podrazumevani jezik je Engleski.',
+            '3': 'Ako želite da se vratite na engleski, kliknite ovde.'
         }
     });
 
@@ -259,13 +266,16 @@ app.controller('myCtrl', ['$scope', '$http', '$translate', function ($scope, $ht
         percent: 42
     });
     $('.pC').progress({
-        percent: 65
+        percent: 72
     });
     $('.pNode').progress({
         percent: 71
     });
     $('.pMySQL').progress({
-        percent: 82
+        percent: 78
+    });
+    $('.pSQL').progress({
+        percent: 83
     });
     $('.pPhotoShop').progress({
         percent: 76
@@ -349,7 +359,9 @@ app.controller('myCtrl', ['$scope', '$http', '$translate', function ($scope, $ht
             $('.floating.ui.label').hide();
         })
     ;
+    $scope.currentLanguage = 'en';
     $scope.changeLanguage = function (key) {
         $translate.use(key);
+        $scope.currentLanguage = key;
     };
 }]);

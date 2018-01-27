@@ -49,23 +49,24 @@
            style="background: transparent; padding:0; margin: 0"></i>
     </a>
     <div class="ui flowing popup top left transition" style="width: 23rem">
-        <div class="ui grid" style="padding: 0 2rem 2rem 2rem">
+        <div class="ui grid" style="padding: 0 1.5rem 1.5rem 1.5rem">
             <div class="sixteen wide column">
                 <h2 class="ui large center aligned icon header" style="font-family: 'Lobster', cursive;">
                     <i class="circular world icon"></i>
-                    {{location.country}} <i class="{{location.country_code.toLowerCase()}} flag"
+                     {{'language.1' | translate}}{{location.country}} <i class="{{location.country_code.toLowerCase()}} flag"
                                             style="background: transparent; padding:0; margin: 0"></i>
                 </h2>
             </div>
             <div class="sixteen wide column">
                 <div class="ui segment">
-                    <p>Automacki jezik prema Vašoj lokaciji.</p>
+                    <p>{{'language.2' | translate}}</p>
                 </div>
                 <h3 class="ui divider"></h3>
-                <div class="ui segment">
-                    <p>I don't understand, translate to <i class="gb flag"
-                                                           style="background: transparent; padding:0; margin: 0"></i>
-                    </p>
+                <div ng-if="currentLanguage == 'en'" ng-click="changeLanguage('rs')" class="ui segment languageChange">
+                    <p>{{'language.3' | translate}}</p>
+                </div>
+                <div ng-if="currentLanguage == 'rs'" ng-click="changeLanguage('en')" class="ui segment languageChange">
+                    <p>{{'language.3' | translate}}</p>
                 </div>
             </div>
         </div>
@@ -241,6 +242,12 @@
                     </div>
                     <div class="label left floated">MySQL</div>
                 </div>
+                <div class="ui active progress pSQL">
+                    <div class="bar">
+                        <div class="progress"></div>
+                    </div>
+                    <div class="label left floated">SQL</div>
+                </div>
                 <div class="ui active progress pPhotoShop">
                     <div class="bar">
                         <div class="progress"></div>
@@ -355,6 +362,12 @@
                     <div class="progress"></div>
                 </div>
                 <div class="label left floated">MySQL</div>
+            </div>
+            <div class="ui active progress pSQL">
+                <div class="bar">
+                    <div class="progress"></div>
+                </div>
+                <div class="label left floated">SQL</div>
             </div>
             <div class="ui active progress pPhotoShop">
                 <div class="bar">

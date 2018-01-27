@@ -2068,3 +2068,11 @@ body, html {
 .colorRed {
     background-color: rgb(158, 16, 13) !important;
 }
+
+.languageChange{
+    cursor: pointer;
+    transition:all 0.3s ease;
+}
+.languageChange:hover{
+    background-color: rgba(204,244,204,.6);
+}
