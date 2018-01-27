@@ -301,10 +301,6 @@ app.controller('myCtrl', ['$scope', '$http', '$translate', function ($scope, $ht
         }
     };
 
-
-    //SLIDER
-
-
     // LOADER
     setTimeout(function () {
         $(".overlay").fadeOut(1200);
@@ -329,7 +325,6 @@ app.controller('myCtrl', ['$scope', '$http', '$translate', function ($scope, $ht
 
     $(window).scroll(function () {
         $('.navibarProgress').progress('set progress', $(document).scrollTop() + $(window).height());
-
         if ($(window).scrollTop() + $(window).height() === $(document).height()) {
             $('.navibarProgress').progress('set progress', $(document).height());
         }
@@ -337,10 +332,8 @@ app.controller('myCtrl', ['$scope', '$http', '$translate', function ($scope, $ht
 
     $('.ui.button.black').click(function () {
         if ($('.ui.form').form('is valid')[0]) {
-
             $('.ui.modal')
                 .modal('show');
-
         }
     });
     //get ip
@@ -349,10 +342,10 @@ app.controller('myCtrl', ['$scope', '$http', '$translate', function ($scope, $ht
     });
 
 //    popout
-$scope.showPopup = false;
-$scope.showPopupFun = function () {
-    $('.floating.ui.label').hide();
-};
+    $scope.showPopup = false;
+    $scope.showPopupFun = function () {
+        $('.floating.ui.label').hide();
+    };
 
     // $('.floating.ui.label').hide();
 
