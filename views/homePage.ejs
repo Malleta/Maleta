@@ -15,16 +15,16 @@
 
 <body class="noScroll" ng-controller="myCtrl">
 <div class="overlay">
-<div id="loader">
-<ul>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
-</ul>
-</div>
+    <div id="loader">
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
 </div>
 
 <div ng-hide="false" class="ui fixed inverted menu">
@@ -33,9 +33,9 @@
             NM
         </a>
         <a class="ui right aligned middle aligned grid item" style="width:90%; border-left: none">
-                <div class="ui grid tiny progress navibarProgress" style="width:100%">
-                    <div class="bar colorRed"></div>
-                </div>
+            <div class="ui grid tiny progress navibarProgress" style="width:100%">
+                <div class="bar colorRed"></div>
+            </div>
         </a>
         <a ng-click="showPopup = !showPopup; showPopupFun()" class="item _location" style="cursor: pointer;">
             <div class="floating ui red label" style="font-size: .5em; top:1.1em; left:76%">!</div>
@@ -190,7 +190,7 @@
                 {{'knowledge.details.2'|translate}}
             </p>
             <div class="ui segment">
-                <div class="ui active progress pHTML" id="pHTML">
+                <div class="ui active progress pHTML">
                     <div class="bar">
                         <div class="progress"></div>
                     </div>
@@ -208,12 +208,6 @@
                     </div>
                     <div class="label">JavaScrip</div>
                 </div>
-                <div class="ui active progress pAngular">
-                    <div class="bar">
-                        <div class="progress"></div>
-                    </div>
-                    <div class="label">AngularJS</div>
-                </div>
                 <div class="ui active progress pPHP">
                     <div class="bar">
                         <div class="progress"></div>
@@ -224,7 +218,21 @@
                     <div class="bar">
                         <div class="progress"></div>
                     </div>
-                    <div class="label left floated">C#</div>
+                    <div class="label left floated">C# ( in progress )</div>
+                </div>
+            </div>
+            <div class="ui segment">
+                <div class="ui active progress pAngular">
+                    <div class="bar">
+                        <div class="progress"></div>
+                    </div>
+                    <div class="label">Angular 5</div>
+                </div>
+                <div class="ui active progress pAngularJS">
+                    <div class="bar">
+                        <div class="progress"></div>
+                    </div>
+                    <div class="label">AngularJS</div>
                 </div>
                 <div class="ui active progress pNode">
                     <div class="bar">
@@ -232,6 +240,14 @@
                     </div>
                     <div class="label">NodeJS</div>
                 </div>
+                <div class="ui active progress pNet">
+                    <div class="bar">
+                        <div class="progress"></div>
+                    </div>
+                    <div class="label">.NET ( in progress )</div>
+                </div>
+            </div>
+            <div class="ui segment">
                 <div class="ui active progress pMySQL">
                     <div class="bar">
                         <div class="progress"></div>
@@ -244,6 +260,8 @@
                     </div>
                     <div class="label left floated">SQL</div>
                 </div>
+            </div>
+            <div class="ui segment">
                 <div class="ui active progress pPhotoShop">
                     <div class="bar">
                         <div class="progress"></div>
@@ -311,7 +329,7 @@
             {{'knowledge.details.2'|translate}}
         </p>
         <div class="ui segment">
-            <div class="ui active progress pHTML" id="pHTML">
+            <div class="ui active progress pHTML">
                 <div class="bar">
                     <div class="progress"></div>
                 </div>
@@ -329,12 +347,6 @@
                 </div>
                 <div class="label">JavaScrip</div>
             </div>
-            <div class="ui active progress pAngular">
-                <div class="bar">
-                    <div class="progress"></div>
-                </div>
-                <div class="label">AngularJS</div>
-            </div>
             <div class="ui active progress pPHP">
                 <div class="bar">
                     <div class="progress"></div>
@@ -345,7 +357,21 @@
                 <div class="bar">
                     <div class="progress"></div>
                 </div>
-                <div class="label left floated">C#</div>
+                <div class="label left floated">C# ( in progress )</div>
+            </div>
+        </div>
+        <div class="ui segment">
+            <div class="ui active progress pAngular">
+                <div class="bar">
+                    <div class="progress"></div>
+                </div>
+                <div class="label">Angular 5</div>
+            </div>
+            <div class="ui active progress pAngularJS">
+                <div class="bar">
+                    <div class="progress"></div>
+                </div>
+                <div class="label">AngularJS</div>
             </div>
             <div class="ui active progress pNode">
                 <div class="bar">
@@ -353,6 +379,14 @@
                 </div>
                 <div class="label">NodeJS</div>
             </div>
+            <div class="ui active progress pNet">
+                <div class="bar">
+                    <div class="progress"></div>
+                </div>
+                <div class="label">.NET ( in progress )</div>
+            </div>
+        </div>
+        <div class="ui segment">
             <div class="ui active progress pMySQL">
                 <div class="bar">
                     <div class="progress"></div>
@@ -365,6 +399,8 @@
                 </div>
                 <div class="label left floated">SQL</div>
             </div>
+        </div>
+        <div class="ui segment">
             <div class="ui active progress pPhotoShop">
                 <div class="bar">
                     <div class="progress"></div>
