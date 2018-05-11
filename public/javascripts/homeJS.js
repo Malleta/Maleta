@@ -6,7 +6,7 @@ app.config(function ($translateProvider) {
         'introducing': {
             'hello': 'Hello, I\'m',
             'fullName': 'Nikola Maletić',
-            'webDeveloper': 'Web developer'
+            'webDeveloper': 'Full stack developer'
         },
         'aboutMe': {
             'title': 'Couple words about myself',
@@ -94,7 +94,7 @@ app.config(function ($translateProvider) {
         'introducing': {
             'hello': 'Zdravo, ja sam',
             'fullName': 'Nikola Maletić',
-            'webDeveloper': 'Web developer'
+            'webDeveloper': 'Full stack developer'
         },
         'aboutMe': {
             'title': 'Nekoliko reči o sebi',
