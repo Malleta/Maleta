@@ -58,7 +58,8 @@ app.config(function ($translateProvider) {
             'head': 'Work experience',
             'content': {
                 '1': 'Project named "Želim postati poduzetnik",' +
-                'for the needs of Croatian faculties'
+                'for the needs of Croatian faculties',
+                '2': 'Working on multiple projects as Front-end AngularJS developer.'
             }
         },
         'education': {
@@ -148,7 +149,8 @@ app.config(function ($translateProvider) {
             'head': 'Radno iskustvo',
             'content': {
                 '1': 'Projekat pod nazivom "Želim postati poduzetnik", za potrebe hrvatskih\n' +
-                '                            fakulteta.'
+                '                            fakulteta.',
+                '2': 'Rad na nekoliko projekata kao Front-end AngularJS developer'
             }
         },
         'education': {
