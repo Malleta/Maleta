@@ -259,31 +259,31 @@ app.controller('myCtrl', ['$scope', '$http', '$translate', function ($scope, $ht
         percent: 86
     });
     $('.pJS').progress({
-        percent: 79
+        percent: 90
     });
     $('.pAngular').progress({
-        percent: 69
+        percent: 89
     });
     $('.pAngularJS').progress({
-        percent: 75
+        percent: 80
     });
     $('.pPHP').progress({
-        percent: 37
+        percent: 35
     });
     $('.pC').progress({
-        percent: 66
+        percent: 55
     });
     $('.pNode').progress({
-        percent: 71
+        percent: 40
     });
     $('.pNet').progress({
-        percent: 58
+        percent: 51
     });
     $('.pMySQL').progress({
-        percent: 78
+        percent: 53
     });
     $('.pSQL').progress({
-        percent: 83
+        percent: 50
     });
     $('.pPhotoShop').progress({
         percent: 76
